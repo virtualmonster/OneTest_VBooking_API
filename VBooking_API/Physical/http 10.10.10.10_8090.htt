@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394111210" createdUser="stuart.walker" id="4421d091:16971ded625:-7db6:-170606544:1544155186" selfDescribing="http 10.10.10.10:8090" type="http_transport" updatedTimestamp="1568136532897" updatedUser="STUART.WALKER" version="1.0">
+   <syncdetails compare="http tomcat:8090" lastSynced="1552394111210" sourceid="4421d091:16971ded625:-7db6">
+      <sourcepath path="HotelFinderService/HotelFinder"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!4a5d" credPreemptive="false" credType="0" credUser="" httpHost="10.10.10.10" httpNtlmDomain="" httpPort="8090" httpProxyHost="" httpProxyPassword="#com.ghc.1!59a7" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="#com.ghc.1!471d" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+         <serverAuthentication>
+            <authenticationConfig enabled="false" realm="" type="1"/>
+            <authenticationConfig algorithm="" authParams="" domain="" enabled="false" nonce="false" opaque="" qop="" realm="" stale="" type="2"/>
+            <authenticationConfig enabled="false" type="3"/>
+            <authenticationConfig enabled="false" type="5"/>
+         </serverAuthentication>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

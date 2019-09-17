@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555327980225" createdUser="stuart.walker" id="3340513:16a1c54dd22:328f" type="simple_test_data" updatedTimestamp="1561983438518" updatedUser="stuart.walker" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig autoMapColumns="true" columnCount="" datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true" hasColumnNamesLine="true" linesBeforeColumnNames="0" linesToSkip="0" location="%%PROJECT/ROOT_DIRECTORY%%/Logical/VBServices.scm/Tomcat Services.scm/HotelFinder.wsc/getHotels.opr/GetHotels_DataDrivenSet2.csv" loop="false" paddingChar="" parsingType="OffsetLength" separator="," treatEmptyStringAsNull="false" treatTextAsEmpty="false" treatTextAsEmptyValue="" treatTextAsNull="true" treatTextAsNullValue="NULL" trim="false"/>
+</editableResource>

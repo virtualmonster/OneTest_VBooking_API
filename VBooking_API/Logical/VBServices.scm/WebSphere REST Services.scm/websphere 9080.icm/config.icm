@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561139464243" createdUser="stuart.walker" id="-13424e68:16b79e57614:-2818" type="infrastructure_component_resource" updatedTimestamp="1561139464243" updatedUser="stuart.walker" version="1.1">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig infrastructureType="http_transport">
+      <recordingSettings colour="200,240,143"/>
+   </resourceConfig>
+</editableResource>

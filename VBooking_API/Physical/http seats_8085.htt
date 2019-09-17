@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561133474108" createdUser="stuart.walker" id="-13424e68:16b79e57614:-5bdf" selfDescribing="http seats:8085" type="http_transport" updatedTimestamp="1561133474108" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!69fa" credPreemptive="false" credType="0" credUser="" httpHost="seats" httpNtlmDomain="" httpPort="8085" httpProxyHost="" httpProxyPassword="#com.ghc.1!6435" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" CStyle="Username / Password" Conf="false" Custom="true" Enabled="false" Integ="false" MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+         <oauth clientassertion="" clientid="" clientsecret="" enabled="false" refreshtoken="" scopes="" tokenendpoint=""/>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

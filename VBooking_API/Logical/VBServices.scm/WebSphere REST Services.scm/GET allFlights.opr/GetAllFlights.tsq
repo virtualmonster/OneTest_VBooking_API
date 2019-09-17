@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561373569885" createdUser="stuart.walker" id="-13424e68:16b88a65fe0:-7205" type="test_resource" updatedTimestamp="1561373601539" updatedUser="stuart.walker" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="-13424e68:16b88a65fe0:-7203" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; on resource &quot;/com.vbooking.flights.rest/rest/flights/&quot; using schema &quot;Text&quot; via &quot;websphere 9080&quot;" transport="-13424e68:16b79e57614:-2818">
+               <headerMessage meTy="Message" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="GET" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="URL" type="7" value="/com.vbooking.flights.rest/rest/flights/" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="/com.vbooking.flights.rest/rest/flights/" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <_c meTy="String" name="Version" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction enabled="false" type="1">
+                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="true" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+               </headerMessage>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c name="text" sch="Text" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-13424e68:16b88a65fe0:-71ff" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="-13424e68:16b88a65fe0:-7203" transport="-13424e68:16b79e57614:-2818">
+               <headerMessage type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+               </headerMessage>
+               <subconfig MessageType="http.text.message.type" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="false" filterResourcePath="false" formatter="HTTP_Message" transport="-13424e68:16b79e57614:-2818"/>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="1">
+                        <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
+                     <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Array"/>
+                     <contentTree>[{"flightNumber":"VB041","weekNumber":0,"dayOfWeek":1,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB042","weekNumber":0,"dayOfWeek":2,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB043","weekNumber":0,"dayOfWeek":3,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB044","weekNumber":0,"dayOfWeek":4,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB045","weekNumber":0,"dayOfWeek":5,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB046","weekNumber":0,"dayOfWeek":6,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB047","weekNumber":0,"dayOfWeek":7,"departureAirport":"STN","arrivalAirport":"EDI","departsTime":31500000,"arrivesTime":34200000,"price":80,"totalSeats":0},{"flightNumber":"VB232","weekNumber":0,"dayOfWeek":0,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":67500000,"arrivesTime":73200000,"price":100,"totalSeats":0},{"flightNumber":"VB297","weekNumber":0,"dayOfWeek":1,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB298","weekNumber":0,"dayOfWeek":2,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB299","weekNumber":0,"dayOfWeek":3,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB300","weekNumber":0,"dayOfWeek":4,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB301","weekNumber":0,"dayOfWeek":5,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB302","weekNumber":0,"dayOfWeek":6,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB303","weekNumber":0,"dayOfWeek":7,"departureAirport":"STN","arrivalAirport":"BCN","departsTime":20700000,"arrivesTime":26400000,"price":100,"totalSeats":0},{"flightNumber":"VB400","weekNumber":0,"dayOfWeek":1,"departureAirport":"STN","arrivalAirport":"AMS","departsTime":47400000,"arrivesTime":51000000,"price":120,"totalSeats":3},{"flightNumber":"VB401","weekNumber":0,"dayOfWeek":2,"departureAirport":"STN","arrivalAirport":"AMS","departsTime":47400000,"arrivesTime":51000000,"price":120,"totalSeats":3},{"flightNumber":"VB402","weekNumber":0,"dayOfWeek":3,"departureAirport":"STN","arrivalAirport":"AMS","departsTime":47400000,"arrivesTime":51000000,"price":120,"totalSeats":3},{"flightNumber":"VB403","weekNumber":0,"dayOfWeek":4,"departureAirport":"STN","arrivalAirport":"AMS","departsTime":47400000,"arrivesTime":51000000,"price":120,"totalSeats":3},{"flightNumber":"VB404","weekNumber":0,"dayOfWeek":5,"departureAirport":"STN","arrivalAirport":"AMS","departsTime":47400000,"arrivesTime":51000000,"price":120,"totalSeats":3}]<defaultActions>
+                           <defaultMessageActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultMessageActions>
+                           <defaultScalarActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultScalarActions>
+                        </defaultActions>
+                        <updates>
+                           <updateField path="/text/Array">
+                              <_c assocdefid="Array"/>
+                           </updateField>
+                           <updateField path="/text/Array/0">
+                              <_c name="0"/>
+                           </updateField>
+                           <updateField path="/text/Array/1">
+                              <_c name="1"/>
+                           </updateField>
+                           <updateField path="/text/Array/2">
+                              <_c name="2"/>
+                           </updateField>
+                           <updateField path="/text/Array/3">
+                              <_c name="3"/>
+                           </updateField>
+                           <updateField path="/text/Array/4">
+                              <_c name="4"/>
+                           </updateField>
+                           <updateField path="/text/Array/5">
+                              <_c name="5"/>
+                           </updateField>
+                           <updateField path="/text/Array/6">
+                              <_c name="6"/>
+                           </updateField>
+                           <updateField path="/text/Array/7">
+                              <_c name="7"/>
+                           </updateField>
+                           <updateField path="/text/Array/8">
+                              <_c name="8"/>
+                           </updateField>
+                           <updateField path="/text/Array/9">
+                              <_c name="9"/>
+                           </updateField>
+                           <updateField path="/text/Array/10">
+                              <_c name="10"/>
+                           </updateField>
+                           <updateField path="/text/Array/11">
+                              <_c name="11"/>
+                           </updateField>
+                           <updateField path="/text/Array/12">
+                              <_c name="12"/>
+                           </updateField>
+                           <updateField path="/text/Array/13">
+                              <_c name="13"/>
+                           </updateField>
+                           <updateField path="/text/Array/14">
+                              <_c name="14"/>
+                           </updateField>
+                           <updateField path="/text/Array/15">
+                              <_c name="15"/>
+                           </updateField>
+                           <updateField path="/text/Array/16">
+                              <_c name="16"/>
+                           </updateField>
+                           <updateField path="/text/Array/17">
+                              <_c name="17"/>
+                           </updateField>
+                           <updateField path="/text/Array/18">
+                              <_c name="18"/>
+                           </updateField>
+                           <updateField path="/text/Array/19">
+                              <_c name="19"/>
+                           </updateField>
+                        </updates>
+                     </contentTree>
+                     <fieldActionGroup>
+                        <fieldAction type="1">
+                           <fieldAction type="7"/>
+                        </fieldAction>
+                        <fieldAction type="1">
+                           <fieldAction type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

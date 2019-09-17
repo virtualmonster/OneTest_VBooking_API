@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561133866225" createdUser="stuart.walker" id="-13424e68:16b79e57614:-5030" selfDescribing="http websphere:9080" type="http_transport" updatedTimestamp="1561133914299" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!bcf2" credPreemptive="false" credType="0" credUser="" httpHost="websphere" httpNtlmDomain="" httpPort="9080" httpProxyHost="" httpProxyPassword="#com.ghc.1!27b4" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="#com.ghc.1!ebdb" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+         <oauth clientassertion="" clientid="" clientsecret="" enabled="false" refreshtoken="" scopes="" tokenendpoint=""/>
+         <serverAuthentication>
+            <authenticationConfig enabled="false" realm="" type="1"/>
+            <authenticationConfig algorithm="" authParams="" domain="" enabled="false" nonce="false" opaque="" qop="" realm="" stale="" type="2"/>
+            <authenticationConfig enabled="false" type="3"/>
+            <authenticationConfig enabled="false" type="5"/>
+         </serverAuthentication>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

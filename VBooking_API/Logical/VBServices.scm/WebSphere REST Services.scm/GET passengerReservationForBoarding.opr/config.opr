@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561139848884" createdUser="stuart.walker" id="-13424e68:16b79e57614:-203b" type="operation_resource" updatedTimestamp="1561140014848" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="255,165,180" dependencies="-13424e68:16b79e57614:-2818,-13424e68:16b79e57614:-430d" invokeDynamicFormatterID="http.text.message.type" invokeFormatterID="HTTP_Message" invokeTransportID="-13424e68:16b79e57614:-2818" maxTime="0" mepEndUsed="true" mepStartSchemaID="-13424e68:16b79e57614:-430d" mepStartSchemaNodeFormatter="rest_nodeformatter" mepStartSchemaroot="Get reservationBoardingDetails" mepType="IN_OUT" minTime="0" stubDynamicFormatterID="http.text.message.type" stubFormatterID="HTTP_Message" stubTransportID="-13424e68:16b79e57614:-2818">
+      <invokeHeaderNode meTy="Message" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="http.text.message.type" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="GET" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="URL" type="7" value="/com.vbooking.flights.rest/rest/reservations" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="/com.vbooking.flights.rest/rest/reservations" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Version" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction enabled="false" type="1">
+                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="true" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c MessageType="http.text.message.type" Method="GET" URL="/com.vbooking.flights.rest/rest/reservations/" allowSubPath="true" consumerType="Participate" filterHeaders="false" filterMethod="true" filterResourcePath="true"/>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

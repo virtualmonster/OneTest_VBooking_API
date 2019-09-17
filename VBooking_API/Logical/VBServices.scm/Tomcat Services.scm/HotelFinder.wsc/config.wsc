@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394110730" createdUser="stuart.walker" id="4421d091:16971ded625:-7db6" selfDescribing="HotelFinder" syncSourceDetails="-2e141457:1695e87fa28:-7f6c" type="wsdl_service_component" updatedTimestamp="1552394110738" updatedUser="stuart.walker" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig>
+      <wsdl id="4421d091:16971ded625:-7db7" name="HotelFinder"/>
+   </resourceConfig>
+</editableResource>

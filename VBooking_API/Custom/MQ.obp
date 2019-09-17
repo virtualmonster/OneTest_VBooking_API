@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><ObservationPoint name="MQ" type="WebSphere MQ">
+   <_c ApplicationName="RIT Discovery" ApplicationType="MQSeries Client" Channel="vbookingwebapp" Host="mqserver" Password="" Port="1414" QueueManager="QM_vbooking" SSLFipsRequired="false" SSLKeyResetCount="" SSLProtocols="" Username="" includeAdmin="false" messagingModelQueue="" messagingModelQueueOpenOptions="" messagingModelQueuePrefix="" messagingModelQueueUseDefault="true" queueFilter=""/>
+</ObservationPoint>

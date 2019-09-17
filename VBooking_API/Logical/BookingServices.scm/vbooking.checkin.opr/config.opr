@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555320666176" createdUser="stuart.walker" id="3340513:16a1c54dd22:-faa" type="operation_resource" updatedTimestamp="1561135164422" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="167,250,230" dependencies="3340513:16a1c54dd22:-fb1" invokeFormatterID="mq_dynamic_msg_formatter" invokeTransportID="3340513:16a1c54dd22:-fb1" maxTime="0" mepEndUsed="true" mepType="IN_OUT" minTime="0" stubFormatterID="mq_dynamic_msg_formatter" stubTransportID="3340513:16a1c54dd22:-fb1">
+      <invokeHeaderNode meTy="Message" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="queueName" type="7" value="vbooking.checkin" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="vbooking.checkin" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="queueManagerName" type="7" value="QM_vbooking" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="QM_vbooking" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="GrpReport" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="replyQueue" type="7" value="vbooking.checkin.reply" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="vbooking.checkin.reply" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="replyQueueMgr" type="7" value="QM_vbooking" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="QM_vbooking" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="expiry" type="2" value="-1" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="-1" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="report" type="2" value="0" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpCoherence" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="Integer" name="msgType" type="2" value="8" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="8" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="ByteArray" name="msgId" type="14" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="ByteArray" name="correlId" type="14" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="ByteArray" name="grpId" type="14" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="msgSeqNum" type="2" value="1" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="1" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="offset" type="2" value="0" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpConfig" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="Integer" name="persistence" type="2" value="2" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="2" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="priority" type="2" value="0" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="encoding" type="2" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="charSet" type="2" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Integer" name="msgFlags" type="2" value="0" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpIdentContext" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="appIdData" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="ByteArray" name="accountingToken" type="14" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="userId" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpOriginContext" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="appOriginData" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c subMode="101" subQueueName="vbooking.checkin">
+            <subFilter correlationID="" groupID="" messageID="" offset="" seqNumber=""/>
+         </_c>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

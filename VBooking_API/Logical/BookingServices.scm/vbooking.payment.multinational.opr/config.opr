@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555320768993" createdUser="stuart.walker" id="3340513:16a1c54dd22:1907" type="operation_resource" updatedTimestamp="1555320768993" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="215,170,255" dependencies="3340513:16a1c54dd22:-fb1" invokeFormatterID="mq_dynamic_msg_formatter" invokeTransportID="3340513:16a1c54dd22:-fb1" maxTime="0" mepEndUsed="true" mepType="IN_OUT" minTime="0" stubFormatterID="mq_dynamic_msg_formatter" stubTransportID="3340513:16a1c54dd22:-fb1">
+      <invokeHeaderNode meTy="Message" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="queueName" type="7" value="vbooking.payment.multinational" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="vbooking.payment.multinational" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="queueManagerName" type="7" value="QM_vbooking" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="QM_vbooking" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="GrpReport" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="replyQueue" type="7" value="vbooking.payment.multinational.reply" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="vbooking.payment.multinational.reply" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="replyQueueMgr" type="7" value="QM_vbooking" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="QM_vbooking" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpCoherence" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="Integer" name="msgType" type="2" value="1" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="1" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="Message" name="GrpConfig" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="Integer" name="persistence" type="2" value="1" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="1" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c subMode="101" subQueueName="vbooking.payment.multinational"/>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

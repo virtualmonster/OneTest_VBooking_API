@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394111202" createdUser="stuart.walker" id="4421d091:16971ded625:-7db6:701313878:-807255066" type="operation_resource" updatedTimestamp="1552394111202" updatedUser="stuart.walker" version="1.0">
+   <syncdetails compare="HotelFinder/bookHotel" lastSynced="1552394111202" sourceid="4421d091:16971ded625:-7db6">
+      <sourcepath path="HotelFinder/bookHotel"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="152,85,212" dependencies="4421d091:16971ded625:-7db7,4421d091:16971ded625:-7db6:1220038982:408339756" invokeDynamicFormatterID="http.text.message.type" invokeFormatterID="HTTP_Message" invokeTransportID="4421d091:16971ded625:-7db6:1220038982:408339756" maxTime="0" mepEndSchemaID="4421d091:16971ded625:-7db7" mepEndSchemaNodeFormatter="doc_lit" mepEndSchemaroot="bookHotel___OUTPUT___bookHotelResponse" mepEndUsed="true" mepStartSchemaID="4421d091:16971ded625:-7db7" mepStartSchemaNodeFormatter="doc_lit" mepStartSchemaroot="bookHotel___INPUT___bookHotelRequest" mepType="IN_OUT" minTime="0" stubDynamicFormatterID="http.text.message.type" stubFormatterID="HTTP_Message" stubTransportID="4421d091:16971ded625:-7db6:1220038982:408339756">
+      <invokeHeaderNode meTy="Message" type="12" version="1.2">
+         <nodeProcessor id="doc_lit">
+            <extension enabled="false" id="soap.message">
+               <_c soapVersion="http://schemas.xmlsoap.org/soap/envelope/"/>
+            </extension>
+            <extension enabled="false" id="ws.security"/>
+            <extension enabled="false" id="soap.headers"/>
+            <extension enabled="false" id="ws.addressing"/>
+         </nodeProcessor>
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="http.text.message.type" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="POST" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="URL" type="7" value="/hotelsWS/services/HotelFinder" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="/hotelsWS/services/HotelFinder" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Version" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction enabled="false" type="1">
+                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                  </fieldAction>
+               </fieldActionGroup>
+               <_c name="SOAPAction" type="7" value="&quot;bookHotel&quot;" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="0">
+                        <fieldAction exp="&quot;bookHotel&quot;" type="0"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+               </_c>
+            </_c>
+            <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="true" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c MessageType="http.text.message.type" Method="POST" URL="/hotelsWS/services/HotelFinder" allowSubPath="false" consumerType="Participate" filterHeaders="true" filterMethod="true" filterResourcePath="true">
+            <filterHeadersList>
+               <header name="SOAPAction" type="7" value="&quot;bookHotel&quot;"/>
+            </filterHeadersList>
+         </_c>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

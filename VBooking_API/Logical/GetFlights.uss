@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561134457589" createdUser="stuart.walker" id="-13424e68:16b79e57614:-430d" selfDescribing="Flights" type="parameterized_url_schema" updatedTimestamp="1561139975022" updatedUser="stuart.walker" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig schemaSourceTemplateName="URL">
+      <schemaSourceConfig basePath="" name="Flights">
+         <url templateName="GetFlights">
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="com.vbooking.flights.rest" parameterName="com.vbooking.flights.rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="rest" parameterName="rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="flights" parameterName="flights" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="true" literal="" parameterName="Flight" type="7"/>
+         </url>
+         <url templateName="GetFlightsWithReservations">
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="com.vbooking.flights.rest" parameterName="com.vbooking.flights.rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="rest" parameterName="rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="flights" parameterName="flights" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="true" literal="VB047" parameterName="VB047" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="withReservations" parameterName="withReservations" type="7"/>
+         </url>
+         <url templateName="Get reservationBoardingDetails">
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="com.vbooking.flights.rest" parameterName="com.vbooking.flights.rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="rest" parameterName="rest" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="reservations" parameterName="reservations" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="true" literal="" parameterName="ReservationNumber" type="7"/>
+         </url>
+      </schemaSourceConfig>
+   </resourceConfig>
+</editableResource>

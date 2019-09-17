@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1563431814321" createdUser="stuart.walker" id="725c2c54:16c035ae41c:-6ff5" type="simple_test_data" updatedTimestamp="1563431814321" updatedUser="stuart.walker" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig autoMapColumns="true" columnCount="" datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true" hasColumnNamesLine="true" linesBeforeColumnNames="0" location="%%PROJECT/ROOT_DIRECTORY%%/Logical/BookingServices.scm/vbooking.booking.opr/MBDD.csv" loop="false" parsingType="OffsetLength" separator="," treatEmptyStringAsNull="false" treatTextAsEmpty="false" treatTextAsEmptyValue="" treatTextAsNull="true" treatTextAsNullValue="NULL" trim="false"/>
+</editableResource>

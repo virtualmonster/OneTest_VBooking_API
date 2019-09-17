@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1561133474149" createdUser="stuart.walker" id="-13424e68:16b79e57614:-5bcb" type="operation_resource" updatedTimestamp="1561133474149" updatedUser="stuart.walker" version="1.0">
+   <documentation>
+      <description value="Resource created from observation"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="167,250,230" dependencies="-13424e68:16b79e57614:-5bde" invokeDynamicFormatterID="http.text.message.type" invokeFormatterID="HTTP_Message" invokeTransportID="-13424e68:16b79e57614:-5bde" maxTime="0" mepEndUsed="true" mepType="IN_OUT" minTime="0" stubDynamicFormatterID="http.text.message.type" stubFormatterID="HTTP_Message" stubTransportID="-13424e68:16b79e57614:-5bde">
+      <invokeHeaderNode meTy="Message" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="http.text.message.type" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="POST" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="URL" type="7" value="/availableseats" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="/availableseats" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Version" type="7" value="" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction enabled="false" type="1">
+                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                  </fieldAction>
+               </fieldActionGroup>
+               <_c meTy="String" name="SOAPAction" type="7" value="&quot;checkseats&quot;" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="0">
+                        <fieldAction exp="&quot;checkseats&quot;" type="0"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+               </_c>
+            </_c>
+            <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="true" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c MessageType="http.text.message.type" Method="POST" URL="/availableseats" consumerType="Participate" filterHeaders="true" filterMethod="true" filterResourcePath="true">
+            <filterHeadersList>
+               <header name="SOAPAction" value="&quot;checkseats&quot;"/>
+            </filterHeadersList>
+         </_c>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

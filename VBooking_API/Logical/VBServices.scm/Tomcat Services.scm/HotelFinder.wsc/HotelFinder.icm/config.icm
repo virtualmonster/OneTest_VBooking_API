@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394111182" createdUser="stuart.walker" id="4421d091:16971ded625:-7db6:1220038982:408339756" type="infrastructure_component_resource" updatedTimestamp="1552394111182" updatedUser="stuart.walker" version="1.1">
+   <syncdetails compare="HotelFinderService/HotelFinder" lastSynced="1552394111182" sourceid="4421d091:16971ded625:-7db6">
+      <sourcepath path="HotelFinderService/HotelFinder"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig infrastructureType="http_transport">
+      <recordingSettings colour="175,110,232"/>
+   </resourceConfig>
+</editableResource>
