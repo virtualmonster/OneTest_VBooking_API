@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1563434610241" createdUser="stuart.walker" id="725c2c54:16c035ae41c:-67fb" type="stub_resource" updatedTimestamp="1563434719776" updatedUser="stuart.walker" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1563434610241" createdUser="stuart.walker" id="725c2c54:16c035ae41c:-67fb" type="stub_resource" updatedTimestamp="1569398399433" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -387,6 +387,14 @@
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
+                              <_c meTy="Integer" name="feedback" sch="MQ Subscribe" type="2" version="1.2">
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="backedOut" optional="true" sch="MQ Subscribe" type="2" version="1.2"/>
                               <_c meTy="String" name="replyQueue" sch="MQ Subscribe" type="7" version="1.2">
                                  <filterActionGroup>
                                     <fieldAction enabled="false" type="1">
@@ -394,17 +402,11 @@
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
+                              <_c meTy="Boolean" name="replyQueueIsDynamic" optional="true" sch="MQ Subscribe" type="8" version="1.2"/>
                               <_c meTy="String" name="replyQueueMgr" sch="MQ Subscribe" type="7" version="1.2">
                                  <filterActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction enabled="false" exp="QM_vbooking" type="0"/>
-                                    </fieldAction>
-                                 </filterActionGroup>
-                              </_c>
-                              <_c meTy="Integer" name="feedback" sch="MQ Subscribe" type="2" version="1.2">
-                                 <filterActionGroup>
-                                    <fieldAction enabled="false" type="1">
-                                       <fieldAction enabled="false" exp="0" type="0"/>
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
@@ -442,20 +444,6 @@
                               <_c meTy="Date-Time" name="putDatTime" sch="MQ Subscribe" type="11" version="1.2"/>
                               <_c meTy="String" name="appOriginData" sch="MQ Subscribe" type="7" version="1.2"/>
                            </_c>
-                           <_c meTy="String" name="queueName" sch="MQ Subscribe" type="7" version="1.2">
-                              <filterActionGroup>
-                                 <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="vbooking.booking" type="0"/>
-                                 </fieldAction>
-                              </filterActionGroup>
-                           </_c>
-                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="MQ Subscribe" type="11" version="1.2">
-                              <filterActionGroup>
-                                 <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="23:50:15.455 2019/07/17" type="0"/>
-                                 </fieldAction>
-                              </filterActionGroup>
-                           </_c>
                            <_c meTy="Message" name="Properties" sch="MQ Subscribe" type="12" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
@@ -483,6 +471,20 @@
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
+                           </_c>
+                           <_c meTy="String" name="queueName" sch="MQ Subscribe" type="7" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="vbooking.booking" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="MQ Subscribe" type="11" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="23:50:15.455 2019/07/17" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
                            </_c>
                            <_c meTy="String" name="queueManagerName" sch="MQ Subscribe" type="7" value="QM_vbooking" version="1.2">
                               <filterActionGroup>
@@ -834,6 +836,9 @@
                                           <updates>
                                              <updateField path="/text/bookFlightResponse">
                                                 <_c assocdefid="xml.Element"/>
+                                             </updateField>
+                                             <updateField path="/text/bookFlightResponse/newReservationNumber/{}">
+                                                <_c fieldIgnores="0,1,2"/>
                                              </updateField>
                                           </updates>
                                        </contentTree>
