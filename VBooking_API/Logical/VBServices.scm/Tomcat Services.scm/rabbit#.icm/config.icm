@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1569515261687" createdUser="STUART.WALKER" id="-1817bcdc:16d651289f6:b1c" type="infrastructure_component_resource" updatedTimestamp="1569515261687" updatedUser="STUART.WALKER" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig infrastructureType="rabbitmq_transport">
+      <recordingSettings colour="124,199,255"/>
+   </resourceConfig>
+</editableResource>
