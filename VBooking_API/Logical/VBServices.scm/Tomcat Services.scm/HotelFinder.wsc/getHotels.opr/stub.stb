@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555514861865" createdUser="stuart.walker" id="-2ac3f665:16a2922ab96:-2bec" type="stub_resource" updatedTimestamp="1570125294018" updatedUser="STUART.WALKER" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1570125283865" createdUser="STUART.WALKER" id="-1817bcdc:16d8f2c9ff6:-7db9" type="stub_resource" updatedTimestamp="1570125294041" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
    <resourceConfig description="" name="">
       <testTree>
-         <editableResource id="-2ac3f665:16a2922ab96:-2be2" selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions" type="message_switch_action" version="1.0">
+         <editableResource id="-1817bcdc:16d8f2c9ff6:-7daf" selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions" type="message_switch_action" version="1.0">
             <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
             <resourceConfig description="" formatter="HTTP_Message" name="on resource &quot;/hotelsWS/services/HotelFinder&quot; via &quot;HotelFinder&quot;" src="4421d091:16971ded625:-7db6:-817575104:-807255066" transport="4421d091:16971ded625:-7db6:1220038982:408339756">
                <settings MessageType="http.text.message.type" Method="POST" URL="/hotelsWS/services/HotelFinder" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="true" filterMethod="true" filterResourcePath="true">
@@ -10,11 +10,11 @@
                <header name="SOAPAction" type="7" value="&quot;getHotels&quot;"/>
                   </filterHeadersList>
                </settings>
-               <passThrough behaviour="DELAY" componentId="4421d091:16971ded625:-7db6:-817575104:-807255066" componentType="OPERATION" templateType="http_transport">
-                  <DELAY delayPeriod="0"/>
+               <passThrough behaviour="SIMULATE_ERROR" componentId="4421d091:16971ded625:-7db6:-817575104:-807255066" componentType="OPERATION" templateType="http_transport">
+                  <SIMULATE_ERROR delayPeriod="0" errorCode="503" statusText="Unavailable"/>
                </passThrough>
                <cases>
-                  <editableResource id="-2ac3f665:16a2922ab96:-2bde" selfDescribing="Configure the filtering and validation for this Case action" type="message_case_action" version="1.0">
+                  <editableResource id="-1817bcdc:16d8f2c9ff6:-7dab" selfDescribing="Configure the filtering and validation for this Case action" type="message_case_action" version="1.0">
                      <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                      <resourceConfig description="" name="&quot;Text&quot; using schema &quot;Text&quot;">
                         <FilterExpressions option="NOTHING" type="script:ECMAScript"/>
@@ -24,104 +24,18 @@
                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                               </fieldAction>
                            </fieldActionGroup>
-                           <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="doc_lit" sch="Text" type="12" version="1.2">
-                              <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="4421d091:16971ded625:-7db7" fieldSchemaRoot="getHotels___INPUT___getHotelsRequest">
+                           <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                              <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
                                  <property name="XML.nullvalues" value="false"/>
                                  <property name="XML.normalise" value="true"/>
                                  <property name="XML.declaration" value="true"/>
                                  <property name="XML.encoding" value="UTF-8"/>
-                                 <property name="Multi-line indented" value="Multi-line indented"/>
-                                 <property name="XML.xmlFormat" value="Multi-line indented"/>
+                                 <property name="Multi-line indented" value="Single line"/>
+                                 <property name="XML.xmlFormat" value="Single line"/>
                                  <property name="XML.cdata" value="false"/>
                                  <property name="XML.space" value="false"/>
                               </fieldExpander>
-                              <nodeProcessor id="doc_lit">
-                                 <extension enabled="false" id="soap.message">
-                                    <_c soapVersion="http://schemas.xmlsoap.org/soap/envelope/"/>
-                                 </extension>
-                                 <extension enabled="false" id="ws.security">
-                                    <_c MSOption="true"/>
-                                 </extension>
-                                 <extension enabled="false" id="soap.headers">
-                                    <_c assocdefid="xml.Element" meTy="xml.Element" name="" sch="XML" type="12" version="1.2">
-                                       <fieldActionGroup>
-                                          <fieldAction enabled="false" type="1">
-                                             <fieldAction enabled="false" type="0"/>
-                                          </fieldAction>
-                                          <fieldAction type="0">
-                                             <fieldAction type="0"/>
-                                          </fieldAction>
-                                       </fieldActionGroup>
-                                       <_c coreTypeInt="7" coreTypeName="String" meTy="xml.Text" name="" nodeFormatter="XML" sch="XML" type="12" version="1.2">
-                                          <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="4421d091:16971ded625:-7db7-SoapHeaders" fieldSchemaRoot="Undefined_SOAP_Header">
-                                             <property name="XML.nullvalues" value="false"/>
-                                             <property name="XML.normalise" value="true"/>
-                                             <property name="XML.declaration" value="true"/>
-                                             <property name="XML.encoding" value="UTF-8"/>
-                                             <property name="XML.xmlFormat" value="Multi-line indented"/>
-                                             <property name="XML.cdata" value="false"/>
-                                             <property name="XML.space" value="false"/>
-                                          </fieldExpander>
-                                          <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;Undefined_SOAP_Header/&gt;<defaultActions>
-                                                <defaultMessageActions>
-                                                   <fieldActionGroup>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                                                      </fieldAction>
-                                                      <fieldAction type="0">
-                                                         <fieldAction type="100"/>
-                                                      </fieldAction>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction enabled="false" type="5"/>
-                                                      </fieldAction>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                                      </fieldAction>
-                                                   </fieldActionGroup>
-                                                </defaultMessageActions>
-                                                <defaultScalarActions>
-                                                   <fieldActionGroup>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction enabled="false" type="0"/>
-                                                      </fieldAction>
-                                                      <fieldAction type="0">
-                                                         <fieldAction type="0"/>
-                                                      </fieldAction>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction enabled="false" type="5"/>
-                                                      </fieldAction>
-                                                      <fieldAction enabled="false" type="1">
-                                                         <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                                      </fieldAction>
-                                                   </fieldActionGroup>
-                                                </defaultScalarActions>
-                                             </defaultActions>
-                                             <updates>
-                                                <updateField path="/{}/Undefined_SOAP_Header">
-                                                   <_c assocdefid="Undefined_SOAP_Header"/>
-                                                </updateField>
-                                             </updates>
-                                          </contentTree>
-                                          <fieldActionGroup>
-                                             <fieldAction type="0">
-                                                <fieldAction type="4"/>
-                                             </fieldAction>
-                                             <fieldAction enabled="false" type="1">
-                                                <fieldAction enabled="false" type="7"/>
-                                             </fieldAction>
-                                          </fieldActionGroup>
-                                       </_c>
-                                    </_c>
-                                 </extension>
-                                 <extension enabled="false" id="ws.addressing"/>
-                              </nodeProcessor>
-                              <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;getHotels___INPUT___getHotelsRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
-   &lt;getHotels xmlns="http://hotel.booking.vbooking.com"&gt;&#13;
-      &lt;city/&gt;&#13;
-      &lt;from xsi:type=""/&gt;&#13;
-      &lt;to xsi:type=""/&gt;&#13;
-   &lt;/getHotels&gt;&#13;
-&lt;/getHotels___INPUT___getHotelsRequest&gt;<defaultActions>
+                              <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soapenv:Body&gt;&lt;getHotels xmlns="http://hotel.booking.vbooking.com"&gt;&lt;city/&gt;&lt;from xsi:type=""/&gt;&lt;to xsi:type=""/&gt;&lt;/getHotels&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;<defaultActions>
                                     <defaultMessageActions>
                                        <fieldActionGroup>
                                           <fieldAction enabled="false" type="1">
@@ -150,47 +64,53 @@
                                     </defaultScalarActions>
                                  </defaultActions>
                                  <updates>
-                                    <updateField path="/text/getHotels___INPUT___getHotelsRequest">
-                                       <_c assocdefid="getHotels___INPUT___getHotelsRequest"/>
+                                    <updateField path="/text/soapenv:Envelope">
+                                       <_c assocdefid="xml.Element"/>
                                     </updateField>
-                                    <setAction index="0" path="/text/getHotels___INPUT___getHotelsRequest/getHotels/city/{}" replaceActionType="0" replaceOuterType="1">
+                                    <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotels/city/{}" replaceActionType="0" replaceOuterType="1">
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" type="0"/>
                                        </fieldAction>
                                     </setAction>
-                                    <setFilter path="/text/getHotels___INPUT___getHotelsRequest/getHotels/city/{}">
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/city/{}">
                                        <fieldAction type="1">
                                           <fieldAction exp="Barcelona" type="0"/>
                                        </fieldAction>
                                     </setFilter>
-                                    <setFilter path="/text/getHotels___INPUT___getHotelsRequest/getHotels/from/xsi:type">
-                                       <fieldAction enabled="false" type="1">
-                                          <fieldAction enabled="false" exp="xsd:dateTime" type="0"/>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/xsi:type">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="xsd:dateTime" type="0"/>
                                        </fieldAction>
                                     </setFilter>
-                                    <setAction index="1" path="/text/getHotels___INPUT___getHotelsRequest/getHotels/from/{}" replaceActionType="0" replaceOuterType="1">
+                                    <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/xsi:type">
+                                       <_c type="28"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/{}" replaceActionType="0" replaceOuterType="1">
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" type="0"/>
                                        </fieldAction>
                                     </setAction>
-                                    <setFilter path="/text/getHotels___INPUT___getHotelsRequest/getHotels/from/{}">
-                                       <fieldAction enabled="false" type="1">
-                                          <fieldAction enabled="false" exp="2019-04-17T15:27:24.982Z" type="0"/>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/{}">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="2019-12-08T00:00:00.000Z" type="0"/>
                                        </fieldAction>
                                     </setFilter>
-                                    <setFilter path="/text/getHotels___INPUT___getHotelsRequest/getHotels/to/xsi:type">
-                                       <fieldAction enabled="false" type="1">
-                                          <fieldAction enabled="false" exp="xsd:dateTime" type="0"/>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/xsi:type">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="xsd:dateTime" type="0"/>
                                        </fieldAction>
                                     </setFilter>
-                                    <setAction index="1" path="/text/getHotels___INPUT___getHotelsRequest/getHotels/to/{}" replaceActionType="0" replaceOuterType="1">
+                                    <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/xsi:type">
+                                       <_c type="28"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/{}" replaceActionType="0" replaceOuterType="1">
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" type="0"/>
                                        </fieldAction>
                                     </setAction>
-                                    <setFilter path="/text/getHotels___INPUT___getHotelsRequest/getHotels/to/{}">
-                                       <fieldAction enabled="false" type="1">
-                                          <fieldAction enabled="false" exp="2019-04-17T15:27:24.982Z" type="0"/>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/{}">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="2019-12-09T00:00:00.000Z" type="0"/>
                                        </fieldAction>
                                     </setFilter>
                                  </updates>
@@ -248,6 +168,11 @@
                                  <_c meTy="String" name="If-Modified-Since" sch="Http Subscribe" type="7" version="1.2"/>
                                  <_c meTy="String" name="If-None-Match" sch="Http Subscribe" type="7" version="1.2"/>
                                  <_c meTy="String" name="User-Agent" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Host" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Connection" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Cookie" sch="Http Subscribe" type="7" version="1.2"/>
                                  <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2">
                                     <filterActionGroup>
                                        <fieldAction enabled="false" type="1">
@@ -255,20 +180,17 @@
                                        </fieldAction>
                                     </filterActionGroup>
                                  </_c>
+                                 <_c meTy="String" name="Pragma" sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" exp="no-cache" type="0"/>
+                                       </fieldAction>
+                                    </filterActionGroup>
+                                 </_c>
                                  <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2">
                                     <filterActionGroup>
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" exp="&quot;getHotels&quot;" type="0"/>
-                                       </fieldAction>
-                                    </filterActionGroup>
-                                 </_c>
-                                 <_c meTy="String" name="Host" sch="Http Subscribe" type="7" version="1.2"/>
-                                 <_c meTy="String" name="Connection" sch="Http Subscribe" type="7" version="1.2"/>
-                                 <_c meTy="String" name="Cookie" sch="Http Subscribe" type="7" version="1.2"/>
-                                 <_c meTy="String" name="pragma" sch="Http Subscribe" type="7" version="1.2">
-                                    <filterActionGroup>
-                                       <fieldAction enabled="false" type="1">
-                                          <fieldAction enabled="false" exp="no-cache" type="0"/>
                                        </fieldAction>
                                     </filterActionGroup>
                                  </_c>
@@ -285,15 +207,15 @@
                            <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Subscribe" type="11" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="08:27:24.985 2019/04/17" type="0"/>
+                                    <fieldAction enabled="false" exp="17:13:01.911 2019/10/02" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
                         </headerfilters>
                         <childActions>
-                           <editableResource id="-2ac3f665:16a2922ab96:-2bdd" selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send." type="send_reply_action" version="1.0">
+                           <editableResource id="-1817bcdc:16d8f2c9ff6:-7daa" selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send." type="send_reply_action" version="1.0">
                               <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                              <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; (2)" receiverequestid="-2ac3f665:16a2922ab96:-2be2">
+                              <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; (2)" receiverequestid="-1817bcdc:16d8f2c9ff6:-7daf">
                                  <replyHeaderMessage assocdefid="Http Send Reply" meTy="Message" name="" sch="Http Send Reply" type="12" version="1.2">
                                     <fieldActionGroup>
                                        <fieldAction enabled="false" type="1">
@@ -371,100 +293,18 @@
                                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                        </fieldAction>
                                     </fieldActionGroup>
-                                    <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="doc_lit" sch="Text" type="12" version="1.2">
-                                       <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="4421d091:16971ded625:-7db7" fieldSchemaRoot="getHotels___OUTPUT___getHotelsResponse">
+                                    <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                                       <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
                                           <property name="XML.nullvalues" value="false"/>
                                           <property name="XML.normalise" value="true"/>
                                           <property name="XML.declaration" value="true"/>
                                           <property name="XML.encoding" value="utf-8"/>
-                                          <property name="Multi-line indented" value="Multi-line indented"/>
-                                          <property name="XML.xmlFormat" value="Multi-line indented"/>
+                                          <property name="Multi-line indented" value="Single line"/>
+                                          <property name="XML.xmlFormat" value="Single line"/>
                                           <property name="XML.cdata" value="false"/>
                                           <property name="XML.space" value="false"/>
                                        </fieldExpander>
-                                       <nodeProcessor id="doc_lit">
-                                          <extension enabled="false" id="soap.message">
-                                             <_c soapVersion="http://schemas.xmlsoap.org/soap/envelope/"/>
-                                          </extension>
-                                          <extension enabled="false" id="ws.security">
-                                             <_c MSOption="true"/>
-                                          </extension>
-                                          <extension enabled="false" id="soap.headers">
-                                             <_c assocdefid="xml.Element" meTy="xml.Element" name="" sch="XML" type="12" version="1.2">
-                                                <fieldActionGroup>
-                                                   <fieldAction type="1">
-                                                      <fieldAction type="0"/>
-                                                   </fieldAction>
-                                                </fieldActionGroup>
-                                                <_c coreTypeInt="7" coreTypeName="String" meTy="xml.Text" name="" nodeFormatter="XML" sch="XML" type="12" version="1.2">
-                                                   <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="4421d091:16971ded625:-7db7-SoapHeaders" fieldSchemaRoot="Undefined_SOAP_Header">
-                                                      <property name="XML.nullvalues" value="false"/>
-                                                      <property name="XML.normalise" value="true"/>
-                                                      <property name="XML.declaration" value="true"/>
-                                                      <property name="XML.encoding" value="UTF-8"/>
-                                                      <property name="XML.xmlFormat" value="Multi-line indented"/>
-                                                      <property name="XML.cdata" value="false"/>
-                                                      <property name="XML.space" value="false"/>
-                                                   </fieldExpander>
-                                                   <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;Undefined_SOAP_Header/&gt;<defaultActions>
-                                                         <defaultMessageActions>
-                                                            <fieldActionGroup>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                                                               </fieldAction>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction type="5"/>
-                                                               </fieldAction>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                                               </fieldAction>
-                                                            </fieldActionGroup>
-                                                         </defaultMessageActions>
-                                                         <defaultScalarActions>
-                                                            <fieldActionGroup>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction type="0"/>
-                                                               </fieldAction>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction type="5"/>
-                                                               </fieldAction>
-                                                               <fieldAction type="1">
-                                                                  <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                                               </fieldAction>
-                                                            </fieldActionGroup>
-                                                         </defaultScalarActions>
-                                                      </defaultActions>
-                                                      <updates>
-                                                         <updateField path="/{}/Undefined_SOAP_Header">
-                                                            <_c assocdefid="Undefined_SOAP_Header"/>
-                                                         </updateField>
-                                                      </updates>
-                                                   </contentTree>
-                                                   <fieldActionGroup>
-                                                      <fieldAction type="1">
-                                                         <fieldAction type="7"/>
-                                                      </fieldAction>
-                                                   </fieldActionGroup>
-                                                </_c>
-                                             </_c>
-                                          </extension>
-                                          <extension enabled="false" id="ws.addressing"/>
-                                       </nodeProcessor>
-                                       <contentTree>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;getHotels___OUTPUT___getHotelsResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
-   &lt;getHotelsResponse xmlns="http://hotel.booking.vbooking.com"&gt;&#13;
-      &lt;getHotelsReturn&gt;&#13;
-         &lt;address&gt;&#13;
-            &lt;number&gt;589-591&lt;/number&gt;&#13;
-            &lt;postcode&gt;08014&lt;/postcode&gt;&#13;
-            &lt;region&gt;Catalonia&lt;/region&gt;&#13;
-            &lt;street&gt;Carrer Vermell&lt;/street&gt;&#13;
-            &lt;town&gt;Barcelona&lt;/town&gt;&#13;
-         &lt;/address&gt;&#13;
-         &lt;name&gt;Budget Hotel&lt;/name&gt;&#13;
-         &lt;rate&gt;49.99&lt;/rate&gt;&#13;
-      &lt;/getHotelsReturn&gt;&#13;
-   &lt;/getHotelsResponse&gt;&#13;
-&lt;/getHotels___OUTPUT___getHotelsResponse&gt;<defaultActions>
+                                       <contentTree>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soapenv:Body&gt;&lt;getHotelsResponse xmlns="http://hotel.booking.vbooking.com"&gt;&lt;getHotelsReturn&gt;&lt;address&gt;&lt;number&gt;589-591&lt;/number&gt;&lt;postcode&gt;08014&lt;/postcode&gt;&lt;region&gt;Catalonia&lt;/region&gt;&lt;street&gt;Carrer Vermell&lt;/street&gt;&lt;town&gt;Barcelona&lt;/town&gt;&lt;/address&gt;&lt;name&gt;Downtown Hotel&lt;/name&gt;&lt;rate&gt;235.0&lt;/rate&gt;&lt;/getHotelsReturn&gt;&lt;getHotelsReturn&gt;&lt;address&gt;&lt;number&gt;230&lt;/number&gt;&lt;postcode&gt;08005&lt;/postcode&gt;&lt;region&gt;Catalonia&lt;/region&gt;&lt;street&gt;Carrer Blau&lt;/street&gt;&lt;town&gt;Barcelona&lt;/town&gt;&lt;/address&gt;&lt;name&gt;Global Hotel&lt;/name&gt;&lt;rate&gt;189.6&lt;/rate&gt;&lt;/getHotelsReturn&gt;&lt;getHotelsReturn&gt;&lt;address&gt;&lt;number&gt;111&lt;/number&gt;&lt;postcode&gt;08002&lt;/postcode&gt;&lt;region&gt;Catalonia&lt;/region&gt;&lt;street&gt;Carrer Verd&lt;/street&gt;&lt;town&gt;Barcelona&lt;/town&gt;&lt;/address&gt;&lt;name&gt;Superior Hotel&lt;/name&gt;&lt;rate&gt;200.0&lt;/rate&gt;&lt;/getHotelsReturn&gt;&lt;/getHotelsResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;<defaultActions>
                                              <defaultMessageActions>
                                                 <fieldActionGroup>
                                                    <fieldAction enabled="false" type="1">
@@ -499,8 +339,8 @@
                                              </defaultScalarActions>
                                           </defaultActions>
                                           <updates>
-                                             <updateField path="/text/getHotels___OUTPUT___getHotelsResponse">
-                                                <_c assocdefid="getHotels___OUTPUT___getHotelsResponse"/>
+                                             <updateField path="/text/soapenv:Envelope">
+                                                <_c assocdefid="xml.Element"/>
                                              </updateField>
                                           </updates>
                                        </contentTree>
@@ -519,7 +359,7 @@
                         </childActions>
                      </resourceConfig>
                   </editableResource>
-                  <editableResource id="-2ac3f665:16a2922ab96:-2be1" type="default_case_action" version="1.0">
+                  <editableResource id="-1817bcdc:16d8f2c9ff6:-7dae" type="default_case_action" version="1.0">
                      <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                      <resourceConfig description="" name=" (2)"/>
                   </editableResource>
@@ -527,7 +367,7 @@
             </resourceConfig>
          </editableResource>
       </testTree>
-      <tagDataStore identifier="725c2c54:16be5641a26:-7adc" inputMode="NONE" outputMode="NONE"/>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
       <testprops messageClearance="false"/>
       <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1" messageClearance="false" minorVersion="0" optimise="false" wrks="10">
          <responseTimeTable>

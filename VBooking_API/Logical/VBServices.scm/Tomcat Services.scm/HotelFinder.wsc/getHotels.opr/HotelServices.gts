@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555405910892" createdUser="stuart.walker" id="-2ac3f665:16a20df4699:cfb" type="test_suite_resource" updatedTimestamp="1568813194158" updatedUser="STUART.WALKER" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555405910892" createdUser="stuart.walker" id="-2ac3f665:16a20df4699:cfb" type="test_suite_resource" updatedTimestamp="1570125293966" updatedUser="STUART.WALKER" version="1.0">
    <loggingConfiguration debug="false" writeStubEventsToDB="true"/>
    <resourceConfig>
       <scenario continueOnFail="true" id="4421d091:16971ded625:-799f" type="scenario" version="1.0">

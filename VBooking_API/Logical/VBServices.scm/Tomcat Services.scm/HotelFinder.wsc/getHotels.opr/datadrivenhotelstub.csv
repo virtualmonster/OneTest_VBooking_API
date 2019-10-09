@@ -1,0 +1,8 @@
+"replyId","city","number","postcode","region","street","town","name","rate","getHotelsResponse"
+"1","Barcelona","589-591","08014","Catalonia","Carrer Vermell","Barcelona","Downtown Hotel","235.0","NULL"
+"1","Barcelona","230","08005","Catalonia","Carrer Blau","Barcelona","Global Hotel","189.6","NULL"
+"1","Barcelona","111","08002","Catalonia","Carrer Verd","Barcelona","Superior Hotel","200.0","NULL"
+"2","Edinburgh","","EH61 2AB","Scotland","Red Street","Edinburgh","Superior Hotel","234.5","NULL"
+"2","Edinburgh","107","EH64 3HL","Scotland","Blue Street","Edinburgh","Uptown Hotel","189.6","NULL"
+"2","Edinburgh","53","EH62 2DG","Scotland","Green Street","Edinburgh","Global Hotel","200.0","NULL"
+"3","London","NULL","NULL","NULL","NULL","NULL","NULL","NULL",""

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1570033863706" createdUser="STUART.WALKER" id="-1817bcdc:16d651289f6:77c4" type="test_resource" updatedTimestamp="1570033890858" updatedUser="STUART.WALKER" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1570033863706" createdUser="STUART.WALKER" id="-1817bcdc:16d651289f6:77c4" type="test_resource" updatedTimestamp="1570125294002" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
