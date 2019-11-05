@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1569515261694" createdUser="STUART.WALKER" id="-1817bcdc:16d651289f6:b1d" selfDescribing="rabbit# - amqp://null:***@null:null/null" type="rabbitmq_transport" updatedTimestamp="1569515261694" updatedUser="STUART.WALKER" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig transportName="rabbit#" transportTemplateName="rabbitmq"/>
-</editableResource>

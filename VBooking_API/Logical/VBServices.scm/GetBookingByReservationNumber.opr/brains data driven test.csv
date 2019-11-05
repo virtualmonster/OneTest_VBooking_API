@@ -1,0 +1,4 @@
+"replyId","reservationNumber","flightNumber","passengerFirstName","passengerMiddleName","passengerLastName","passengerGender","reservation"
+"1","A00001","VB297","Michael","Robert","Thomson","M","A00001"
+"2","A00002","VB297","Shinichi","T","Nishimoto","M","A00002"
+"3","A00003","VB297","Jimena","Maria","Gutierrez","F","A00003"
