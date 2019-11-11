@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394628678" createdUser="stuart.walker" id="4421d091:16971ded625:-7b7f" type="test_resource" updatedTimestamp="1555402693195" updatedUser="stuart.walker" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394628678" createdUser="stuart.walker" id="4421d091:16971ded625:-7b7f" type="test_resource" updatedTimestamp="1573138698353" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -28,14 +28,14 @@
                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                               </fieldAction>
                            </fieldActionGroup>
-                           <_c meTy="String" name="Method" sch="Http Publish" type="7" version="1.2">
+                           <_c meTy="String" name="Method" sch="Http Publish" type="7" value="POST" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </_c>
-                           <_c meTy="String" name="URL" sch="Http Publish" type="7" version="1.2">
+                           <_c meTy="String" name="URL" sch="Http Publish" type="7" value="/hotelsWS/services/HotelFinder" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction type="0">
                                     <fieldAction exp="/hotelsWS/services/HotelFinder" type="0"/>
@@ -48,10 +48,10 @@
                                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                  </fieldAction>
                               </fieldActionGroup>
-                              <_c meTy="String" name="Version" sch="Http Publish" type="7" version="1.2">
+                              <_c meTy="String" name="Version" sch="Http Publish" type="7" value="" version="1.2">
                                  <fieldActionGroup>
                                     <fieldAction type="0">
-                                       <fieldAction exp="1.0" type="0"/>
+                                       <fieldAction type="0"/>
                                     </fieldAction>
                                  </fieldActionGroup>
                               </_c>
@@ -61,21 +61,21 @@
                                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                  </fieldActionGroup>
-                                 <_c meTy="String" name="Content-Type" sch="Http Publish" type="7" version="1.2">
+                                 <_c meTy="String" name="Content-Type" sch="Http Publish" type="7" value="text/xml; charset=utf-8" version="1.2">
                                     <fieldActionGroup>
                                        <fieldAction type="0">
                                           <fieldAction exp="text/xml; charset=utf-8" type="0"/>
                                        </fieldAction>
                                     </fieldActionGroup>
                                  </_c>
-                                 <_c meTy="String" name="Pragma" sch="Http Publish" type="7" version="1.2">
+                                 <_c meTy="String" name="Pragma" sch="Http Publish" type="7" value="no-cache" version="1.2">
                                     <fieldActionGroup>
                                        <fieldAction type="0">
                                           <fieldAction exp="no-cache" type="0"/>
                                        </fieldAction>
                                     </fieldActionGroup>
                                  </_c>
-                                 <_c meTy="String" name="SOAPAction" sch="Http Publish" type="7" version="1.2">
+                                 <_c meTy="String" name="SOAPAction" sch="Http Publish" type="7" value="&quot;getHotels&quot;" version="1.2">
                                     <fieldActionGroup>
                                        <fieldAction type="0">
                                           <fieldAction exp="&quot;getHotels&quot;" type="0"/>
@@ -83,8 +83,15 @@
                                     </fieldActionGroup>
                                  </_c>
                               </_c>
+                              <_c meTy="Boolean" name="followRedirects" sch="Http Publish" type="8" value="true" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
                            </_c>
-                           <_c meTy="String" name="MessageType" sch="Http Publish" type="7" version="1.2">
+                           <_c meTy="String" name="MessageType" sch="Http Publish" type="7" value="http.text.message.type" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction type="0">
                                     <fieldAction exp="http.text.message.type" type="0"/>
@@ -280,25 +287,6 @@
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2">
-                              <fieldActionGroup>
-                                 <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
-                                 </fieldAction>
-                              </fieldActionGroup>
-                              <filterActionGroup>
-                                 <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
-                                 </fieldAction>
-                              </filterActionGroup>
-                           </_c>
-                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2">
-                              <filterActionGroup>
-                                 <fieldAction enabled="false" type="1">
-                                    <fieldAction enabled="false" exp="05:35:38.215 2019/03/12" type="0"/>
-                                 </fieldAction>
-                              </filterActionGroup>
-                           </_c>
                            <_c meTy="Message" name="httpDetails" sch="Http Receive Reply" type="12" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
@@ -323,7 +311,7 @@
                                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                  </fieldActionGroup>
-                                 <_c meTy="String" name="Content-Type" sch="Http Receive Reply" type="7" version="1.2">
+                                 <_c meTy="String" name="content-type" sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" exp="text/xml;charset=utf-8" type="0"/>
@@ -336,13 +324,29 @@
                                     </filterActionGroup>
                                  </_c>
                               </_c>
+                              <_c meTy="Boolean" name="followRedirects" optional="true" sch="Http Receive Reply" type="8" version="1.2"/>
+                           </_c>
+                           <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="05:35:38.215 2019/03/12" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
                            </_c>
                         </headerMessage>
-                        <subconfig MessageType="http.text.message.type" Method="POST" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="true" filterMethod="true" filterResourcePath="false" formatter="HTTP_Message" transport="4421d091:16971ded625:-7db6:1220038982:408339756">
-                           <filterHeadersList>
-                              <header disabled="true" name="Content-Type" type="7" value="text/xml;charset=utf-8"/>
-                           </filterHeadersList>
-                        </subconfig>
+                        <subconfig MessageType="http.text.message.type" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="false" filterResourcePath="false" formatter="HTTP_Message" transport="4421d091:16971ded625:-7db6:1220038982:408339756"/>
                         <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
                            <fieldActionGroup>
                               <fieldAction type="1">
@@ -432,7 +436,29 @@
    &lt;getHotelsResponse xmlns="http://hotel.booking.vbooking.com"&gt;&#13;
       &lt;getHotelsReturn&gt;&#13;
          &lt;address&gt;&#13;
-            &lt;number&gt;%%number%%&lt;/number&gt;&#13;
+            &lt;number&gt;589-591&lt;/number&gt;&#13;
+            &lt;postcode&gt;%%postcode%%&lt;/postcode&gt;&#13;
+            &lt;region&gt;%%region%%&lt;/region&gt;&#13;
+            &lt;street&gt;%%street%%&lt;/street&gt;&#13;
+            &lt;town&gt;%%town%%&lt;/town&gt;&#13;
+         &lt;/address&gt;&#13;
+         &lt;name&gt;%%name%%&lt;/name&gt;&#13;
+         &lt;rate&gt;%%rate%%&lt;/rate&gt;&#13;
+      &lt;/getHotelsReturn&gt;&#13;
+      &lt;getHotelsReturn&gt;&#13;
+         &lt;address&gt;&#13;
+            &lt;number&gt;230&lt;/number&gt;&#13;
+            &lt;postcode&gt;%%postcode%%&lt;/postcode&gt;&#13;
+            &lt;region&gt;%%region%%&lt;/region&gt;&#13;
+            &lt;street&gt;%%street%%&lt;/street&gt;&#13;
+            &lt;town&gt;%%town%%&lt;/town&gt;&#13;
+         &lt;/address&gt;&#13;
+         &lt;name&gt;%%name%%&lt;/name&gt;&#13;
+         &lt;rate&gt;%%rate%%&lt;/rate&gt;&#13;
+      &lt;/getHotelsReturn&gt;&#13;
+      &lt;getHotelsReturn&gt;&#13;
+         &lt;address&gt;&#13;
+            &lt;number&gt;111&lt;/number&gt;&#13;
             &lt;postcode&gt;%%postcode%%&lt;/postcode&gt;&#13;
             &lt;region&gt;%%region%%&lt;/region&gt;&#13;
             &lt;street&gt;%%street%%&lt;/street&gt;&#13;
@@ -474,109 +500,223 @@
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse">
                                        <_c assocdefid="getHotels___OUTPUT___getHotelsResponse"/>
                                     </updateField>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/xmlns:xsd">
+                                       <_c value="http://www.w3.org/2001/XMLSchema"/>
+                                    </updateField>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/xmlns:xsi">
+                                       <_c value="http://www.w3.org/2001/XMLSchema-instance"/>
+                                    </updateField>
                                     <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/xmlns">
+                                       <_c value="http://hotel.booking.vbooking.com"/>
+                                    </updateField>
                                     <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn">
-                                       <_c optional="true" repeating="true"/>
-                                    </updateField>
                                     <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/number" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/number">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/number/{}">
-                                       <_c optional="true"/>
+                                       <_c value="589-591"/>
                                     </updateField>
                                     <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/postcode" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/postcode">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/postcode/{}">
-                                       <_c optional="true"/>
+                                       <_c value="08014"/>
                                     </updateField>
                                     <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/region" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/region">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/region/{}">
-                                       <_c optional="true"/>
+                                       <_c value="Catalonia"/>
                                     </updateField>
                                     <setAction index="3" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/street" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/street">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/street/{}">
-                                       <_c optional="true"/>
+                                       <_c value="Carrer Vermell"/>
                                     </updateField>
                                     <setAction index="4" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/town" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/town">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/address/town/{}">
-                                       <_c optional="true"/>
+                                       <_c value="Barcelona"/>
                                     </updateField>
                                     <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/name" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/name">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/name/{}">
-                                       <_c optional="true"/>
+                                       <_c value="Downtown Hotel"/>
                                     </updateField>
                                     <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/rate" replaceActionType="101" replaceOuterType="1">
                                        <fieldAction type="1">
                                           <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
                                        </fieldAction>
                                     </setAction>
-                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/rate">
-                                       <_c optional="true"/>
-                                    </updateField>
                                     <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn/rate/{}">
-                                       <_c optional="true"/>
+                                       <_c value="235.0"/>
+                                    </updateField>
+                                    <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/number" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/number/{}">
+                                       <_c value="230"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/postcode" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/postcode/{}">
+                                       <_c value="08005"/>
+                                    </updateField>
+                                    <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/region" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/region/{}">
+                                       <_c value="Catalonia"/>
+                                    </updateField>
+                                    <setAction index="3" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/street" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/street/{}">
+                                       <_c value="Carrer Blau"/>
+                                    </updateField>
+                                    <setAction index="4" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/town" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/address/town/{}">
+                                       <_c value="Barcelona"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/name" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/name/{}">
+                                       <_c value="Global Hotel"/>
+                                    </updateField>
+                                    <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/rate" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[1]/rate/{}">
+                                       <_c value="189.6"/>
+                                    </updateField>
+                                    <setAction index="3" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/number" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/number/{}">
+                                       <_c value="111"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/postcode" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/postcode/{}">
+                                       <_c value="08002"/>
+                                    </updateField>
+                                    <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/region" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/region/{}">
+                                       <_c value="Catalonia"/>
+                                    </updateField>
+                                    <setAction index="3" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/street" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/street/{}">
+                                       <_c value="Carrer Verd"/>
+                                    </updateField>
+                                    <setAction index="4" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/town" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/address/town/{}">
+                                       <_c value="Barcelona"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/name" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/name/{}">
+                                       <_c value="Superior Hotel"/>
+                                    </updateField>
+                                    <setAction index="2" path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/rate" replaceActionType="101" replaceOuterType="1">
+                                       <fieldAction type="1">
+                                          <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/getHotels___OUTPUT___getHotelsResponse/getHotelsResponse/getHotelsReturn[2]/rate/{}">
+                                       <_c value="200.0"/>
                                     </updateField>
                                  </updates>
                               </contentTree>
                               <fieldActionGroup>
-                                 <fieldAction type="1">
-                                    <fieldAction type="7"/>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
                                  </fieldAction>
                               </fieldActionGroup>
                            </_c>

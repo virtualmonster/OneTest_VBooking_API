@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1572944013049" createdUser="STUART.WALKER" id="-8d914c9:16e3abb5d7b:-7d2b" selfDescribing="swagger" syncSourceDetails="3340513:16a12846b4b:-7de2" type="openapi_definition" updatedTimestamp="1572944013062" updatedUser="STUART.WALKER" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig locationtype="102">
-      <locationURI>https://localhost:5443/RTCP/examples/phonebook/api/swagger.json</locationURI>
-   </resourceConfig>
-</editableResource>

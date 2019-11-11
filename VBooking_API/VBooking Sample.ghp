@@ -3,15 +3,15 @@
       <environmentVariable evdescription="" key="blah" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings ghRepositoryURL="http://localhost:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!31f6" trustStorePath="">
+   <serverSettings ghRepositoryURL="http://localhost:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!5e3f" trustStorePath="">
       <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
-         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!e3aaE351A2E8727E117E55280CB46A5F40E721537E03128A4AC9" recordFilters="" url="jdbc:db2://10.10.10.10:50000/vresults" user="db2inst1">
-            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!a7a8" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!e81021087E1112924AC2446EE34EA2E47276113C55330CAA6A55" recordFilters="" url="jdbc:db2://10.10.10.10:50000/vresults" user="db2inst1">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!94df" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
             <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="db2inst1" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
          </connectionParams>
       </dbConnectionParameters>
-      <automationServer enabled="true" hostname="10.10.10.10.nip.io" port="443" projectId="3051" projectName="Blah" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!5b1f" trustStorePath=""/>
+      <automationServer enabled="true" hostname="10.10.10.10.nip.io" port="443" projectId="3051" projectName="Blah" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!cc44" trustStorePath=""/>
    </serverSettings>
    <permissionsSettings autoLogin="true" host="AP-PNP-DC02" permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
    <resultPublishers disableAll="false"/>

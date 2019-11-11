@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1572945123160" createdUser="STUART.WALKER" id="-8d914c9:16e3abb5d7b:-72eb" type="simple_test_data" updatedTimestamp="1572945123160" updatedUser="STUART.WALKER" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig autoMapColumns="true" columnCount="" datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true" hasColumnNamesLine="true" linesBeforeColumnNames="0" location="%%PROJECT/ROOT_DIRECTORY%%/Logical/VBServices.scm/GetBookingByReservationNumber.opr/brains data driven test.csv" loop="false" parsingType="OffsetLength" separator="," treatEmptyStringAsNull="false" treatTextAsEmpty="false" treatTextAsEmptyValue="" treatTextAsNull="true" treatTextAsNullValue="NULL" trim="false"/>
-</editableResource>
