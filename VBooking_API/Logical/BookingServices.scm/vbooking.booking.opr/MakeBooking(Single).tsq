@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555324330389" createdUser="stuart.walker" id="3340513:16a1c54dd22:27e3" type="test_resource" updatedTimestamp="1555327151536" updatedUser="stuart.walker" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555324330389" createdUser="stuart.walker" id="3340513:16a1c54dd22:27e3" type="test_resource" updatedTimestamp="1573473899719" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -615,7 +615,7 @@
                         <property name="XML.cdata" value="false"/>
                         <property name="XML.space" value="false"/>
                      </fieldExpander>
-                     <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;bookFlightResponse xmlns="http://reservations.vbooking.com/schemas/BookFlightResponse"&gt;&lt;status&gt;SUCCESS&lt;/status&gt;&lt;newReservationNumber&gt;A00010&lt;/newReservationNumber&gt;&lt;/bookFlightResponse&gt;<defaultActions>
+                     <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;bookFlightResponse xmlns="http://reservations.vbooking.com/schemas/BookFlightResponse"&gt;&lt;status&gt;SUCCESS&lt;/status&gt;&lt;newReservationNumber&gt;A00028&lt;/newReservationNumber&gt;&lt;/bookFlightResponse&gt;<defaultActions>
                            <defaultMessageActions>
                               <fieldActionGroup>
                                  <fieldAction type="1">
@@ -646,6 +646,15 @@
                         <updates>
                            <updateField path="/text/bookFlightResponse">
                               <_c assocdefid="xml.Element"/>
+                           </updateField>
+                           <updateField path="/text/bookFlightResponse/xmlns">
+                              <_c value="http://reservations.vbooking.com/schemas/BookFlightResponse"/>
+                           </updateField>
+                           <updateField path="/text/bookFlightResponse/status/{}">
+                              <_c value="SUCCESS"/>
+                           </updateField>
+                           <updateField path="/text/bookFlightResponse/newReservationNumber/{}">
+                              <_c value="A00028"/>
                            </updateField>
                         </updates>
                      </contentTree>

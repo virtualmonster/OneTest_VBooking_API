@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><rule_cache version="1.0">
    <qpath>
+      <match path="{http:////reservations.vbooking.com//schemas//BookFlightResponse}bookFlightResponse/{http:////reservations.vbooking.com//schemas//BookFlightResponse}newReservationNumber/text()">
+         <rule comment="">
+            <fieldActionGroup>
+               <fieldAction type="1">
+                  <fieldAction exp="^A\d{5}$" type="2"/>
+               </fieldAction>
+               <fieldAction type="1">
+                  <fieldAction type="5"/>
+               </fieldAction>
+               <fieldAction type="1">
+                  <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <contexts>
+               <context>DEFAULT</context>
+            </contexts>
+         </rule>
+      </match>
       <match path="Text/text">
          <rule comment="">
             <fieldActionGroup>
