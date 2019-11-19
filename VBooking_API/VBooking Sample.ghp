@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><_c buildID="I20190306_0216" certificateAuthority="KEY_1024_BITS" comments="Project created on March 8, 2019" creationVersion="9.5.0" domain="AgileTestDays" extDocPrefix="" name="VBooking Sample" owner="stuart.walker" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000169-5e87-f789-0000-1ecae67d8563">
+<?xml version="1.0" encoding="UTF-8"?><_c buildID="I20190306_0216" certificateAuthority="KEY_1024_BITS" comments="Project created on March 8, 2019" creationVersion="9.5.0" domain="default" extDocPrefix="" name="VBooking Sample" owner="stuart.walker" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000169-5e87-f789-0000-1ecae67d8563">
    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
       <environmentVariable evdescription="" key="blah" value=""/>
       <environmentVariable evdescription="" key="Database_IP" value=""/>
       <environmentVariable evdescription="" key="HQS_IP" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings ghRepositoryURL="http://10.10.10.10.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!97b3" trustStorePath="">
+   <serverSettings ghRepositoryURL="http://10.10.10.10.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!9624" trustStorePath="">
       <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
-         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!ae154ADB4467E348A2E5727A1178552D0CBA6A1C40F021097E17" recordFilters="" url="jdbc:db2://10.10.10.10.nip.io:50000/vresults" user="db2inst1">
-            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!fb8d" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!1ee6116755210CB26A5E40EB21177E1D129A4A804475E350A2EE" recordFilters="" url="jdbc:db2://10.10.10.10.nip.io:50000/vresults" user="db2inst1">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!933e" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
             <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="db2inst1" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
          </connectionParams>
       </dbConnectionParameters>
-      <automationServer enabled="true" hostname="10.10.10.10.nip.io" port="443" projectId="3051" projectName="Blah" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!ab25" trustStorePath=""/>
+      <automationServer enabled="true" hostname="10.10.10.10.nip.io" port="443" projectId="3051" projectName="Blah" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!3e80" trustStorePath=""/>
    </serverSettings>
    <permissionsSettings autoLogin="true" host="AP-PNP-DC02" permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
    <resultPublishers disableAll="false"/>
