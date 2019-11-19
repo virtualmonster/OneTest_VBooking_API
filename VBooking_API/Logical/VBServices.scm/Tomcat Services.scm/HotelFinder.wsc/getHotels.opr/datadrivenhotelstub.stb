@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1570125557777" createdUser="STUART.WALKER" id="-1817bcdc:16d8f2c9ff6:-7b08" type="stub_resource" updatedTimestamp="1570125557777" updatedUser="STUART.WALKER" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1570125557777" createdUser="STUART.WALKER" id="-1817bcdc:16d8f2c9ff6:-7b08" type="stub_resource" updatedTimestamp="1573570018783" updatedUser="STUART.WALKER" version="1.1">
    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -67,6 +67,11 @@
                                     <updateField path="/text/soapenv:Envelope">
                                        <_c assocdefid="xml.Element"/>
                                     </updateField>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels">
+                                       <fieldAction type="1">
+                                          <fieldAction type="10"/>
+                                       </fieldAction>
+                                    </setFilter>
                                     <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/city">
                                        <fieldAction type="1">
                                           <fieldAction type="10"/>
@@ -117,60 +122,72 @@
                               </fieldActionGroup>
                            </_c>
                         </bodyfilters>
-                        <headerfilters meTy="Message" name="" type="12" version="1.2">
+                        <headerfilters assocdefid="Http Subscribe" meTy="Message" name="" sch="Http Subscribe" type="12" version="1.2">
                            <fieldActionGroup>
                               <fieldAction enabled="false" type="1">
                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                               </fieldAction>
                            </fieldActionGroup>
-                           <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+                           <_c meTy="String" name="Method" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="POST" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="String" name="URL" type="7" value="/hotelsWS/services/HotelFinder" version="1.2">
+                           <_c meTy="String" name="URL" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="/hotelsWS/services/HotelFinder" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                           <_c meTy="Message" name="httpDetails" sch="Http Subscribe" type="12" version="1.2">
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                  </fieldAction>
                               </fieldActionGroup>
-                              <_c meTy="String" name="Version" type="7" value="1.0" version="1.2">
+                              <_c meTy="String" name="Version" sch="Http Subscribe" type="7" version="1.2">
                                  <filterActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction enabled="false" exp="1.0" type="0"/>
                                     </fieldAction>
                                  </filterActionGroup>
                               </_c>
-                              <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                              <_c meTy="Message" name="httpHeaders" sch="Http Subscribe" type="12" version="1.2">
                                  <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                  </fieldActionGroup>
-                                 <_c meTy="String" name="Content-Type" type="7" value="text/xml; charset=utf-8" version="1.2">
+                                 <_c meTy="String" name="Accept" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Referer" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Accept-Language" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Accept-Encoding" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="If-Modified-Since" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="If-None-Match" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="User-Agent" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Host" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Connection" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Cookie" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2">
                                     <filterActionGroup>
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" exp="text/xml; charset=utf-8" type="0"/>
                                        </fieldAction>
                                     </filterActionGroup>
                                  </_c>
-                                 <_c meTy="String" name="Pragma" type="7" value="no-cache" version="1.2">
+                                 <_c meTy="String" name="Pragma" sch="Http Subscribe" type="7" version="1.2">
                                     <filterActionGroup>
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" exp="no-cache" type="0"/>
                                        </fieldAction>
                                     </filterActionGroup>
                                  </_c>
-                                 <_c meTy="String" name="SOAPAction" type="7" value="&quot;getHotels&quot;" version="1.2">
+                                 <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2">
                                     <filterActionGroup>
                                        <fieldAction enabled="false" type="1">
                                           <fieldAction enabled="false" exp="&quot;getHotels&quot;" type="0"/>
@@ -178,15 +195,16 @@
                                     </filterActionGroup>
                                  </_c>
                               </_c>
+                              <_c meTy="Boolean" name="followRedirects" optional="true" sch="Http Subscribe" type="8" version="1.2"/>
                            </_c>
-                           <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                           <_c meTy="String" name="MessageType" sch="Http Subscribe" type="7" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
                                  </fieldAction>
                               </filterActionGroup>
                            </_c>
-                           <_c meTy="Date-Time" name="rcvdTimestamp" type="11" version="1.2">
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Subscribe" type="11" version="1.2">
                               <filterActionGroup>
                                  <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false" exp="18:57:15.065 2019/10/03" type="0"/>
@@ -210,7 +228,7 @@
                                                       <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                                    </fieldAction>
                                                 </fieldActionGroup>
-                                                <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" version="1.2">
+                                                <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" value="200" version="1.2">
                                                    <fieldActionGroup>
                                                       <fieldAction type="0">
                                                          <fieldAction exp="200" type="0"/>
@@ -220,7 +238,7 @@
                                                       </fieldAction>
                                                    </fieldActionGroup>
                                                 </_c>
-                                                <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" version="1.2">
+                                                <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" value="OK" version="1.2">
                                                    <fieldActionGroup>
                                                       <fieldAction type="0">
                                                          <fieldAction exp="OK" type="0"/>
@@ -230,7 +248,7 @@
                                                       </fieldAction>
                                                    </fieldActionGroup>
                                                 </_c>
-                                                <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" version="1.2">
+                                                <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" value="http.text.message.type" version="1.2">
                                                    <fieldActionGroup>
                                                       <fieldAction type="0">
                                                          <fieldAction exp="http.text.message.type" type="0"/>
@@ -246,7 +264,7 @@
                                                          <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                                       </fieldAction>
                                                    </fieldActionGroup>
-                                                   <_c meTy="String" name="Version" sch="Http Send Reply" type="7" version="1.2">
+                                                   <_c meTy="String" name="Version" sch="Http Send Reply" type="7" value="1.1" version="1.2">
                                                       <fieldActionGroup>
                                                          <fieldAction type="0">
                                                             <fieldAction exp="1.1" type="0"/>
@@ -262,7 +280,7 @@
                                                             <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                                                          </fieldAction>
                                                       </fieldActionGroup>
-                                                      <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" version="1.2">
+                                                      <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" value="text/xml;charset=utf-8" version="1.2">
                                                          <fieldActionGroup>
                                                             <fieldAction type="0">
                                                                <fieldAction exp="text/xml;charset=utf-8" type="0"/>
@@ -455,8 +473,482 @@
                                     <tdsref id="-1817bcdc:16d8f2c9ff6:-7b02" lkname="datadrivenhotelstub" lkpath="VBServices/Tomcat Services/HotelFinder/getHotels/datadrivenhotelstub" type="simple_test_data"/>
                                     <lookups column="city" lookupValue="%%city%%"/>
                                  </props>
-                                 <mapper disableFiltersWhenEmpty="false" knownColumns="" noAutoMap="">
-                                    <mapping tagName="SESSION/STATE" type="0"/>
+                                 <mapper disableFiltersWhenEmpty="false" knownColumns="getHotelsResponse,number,town,city,rate,street,replyId,postcode,name,region" noAutoMap="">
+                                    <mapping columnName="city" tagName="city" type="4"/>
+                                    <mapping columnName="getHotelsResponse" tagName="getHotelsResponse" type="4"/>
+                                    <mapping columnName="name" tagName="name" type="4"/>
+                                    <mapping columnName="number" tagName="number" type="4"/>
+                                    <mapping columnName="postcode" tagName="postcode" type="4"/>
+                                    <mapping columnName="rate" tagName="rate" type="4"/>
+                                    <mapping columnName="region" tagName="region" type="4"/>
+                                    <mapping columnName="street" tagName="street" type="4"/>
+                                    <mapping columnName="town" tagName="town" type="4"/>
+                                 </mapper>
+                              </resourceConfig>
+                           </editableResource>
+                        </childActions>
+                     </resourceConfig>
+                  </editableResource>
+                  <editableResource id="2b78a84a:16e600b070b:-7d4a" selfDescribing="Configure the filtering and validation for this Case action" type="message_case_action" version="1.0">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" name="exists() AND &quot;Text&quot; using schema &quot;Text&quot;">
+                        <FilterExpressions option="EXISTS" script="exists()" type="script:ECMAScript"/>
+                        <bodyfilters assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                              <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
+                                 <property name="XML.nullvalues" value="false"/>
+                                 <property name="XML.normalise" value="true"/>
+                                 <property name="XML.declaration" value="true"/>
+                                 <property name="XML.encoding" value="UTF-8"/>
+                                 <property name="Multi-line indented" value="Single line"/>
+                                 <property name="XML.xmlFormat" value="Single line"/>
+                                 <property name="XML.cdata" value="false"/>
+                                 <property name="XML.space" value="false"/>
+                              </fieldExpander>
+                              <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soapenv:Body&gt;&lt;getHotels xmlns="http://hotel.booking.vbooking.com"&gt;&lt;city/&gt;&lt;from xsi:type=""/&gt;&lt;to xsi:type=""/&gt;&lt;/getHotels&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;<defaultActions>
+                                    <defaultMessageActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="0"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultScalarActions>
+                                 </defaultActions>
+                                 <updates>
+                                    <updateField path="/text/soapenv:Envelope">
+                                       <_c assocdefid="xml.Element"/>
+                                    </updateField>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels">
+                                       <fieldAction type="1">
+                                          <fieldAction type="10"/>
+                                       </fieldAction>
+                                    </setFilter>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/city">
+                                       <fieldAction type="1">
+                                          <fieldAction type="10"/>
+                                       </fieldAction>
+                                    </setFilter>
+                                    <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotels/city/{}" replaceActionType="0" replaceOuterType="1">
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" type="0"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotels/city/{}">
+                                       <fieldAction description="Store copy of field in tag 'city'" tN="city" type="2">
+                                          <dataAction type="Copy"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/xsi:type">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="xsd:dateTime" type="0"/>
+                                       </fieldAction>
+                                    </setFilter>
+                                    <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/xsi:type">
+                                       <_c type="28"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotels/from/{}" replaceActionType="0" replaceOuterType="1">
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" type="0"/>
+                                       </fieldAction>
+                                    </setAction>
+                                    <setFilter path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/xsi:type">
+                                       <fieldAction type="1">
+                                          <fieldAction exp="xsd:dateTime" type="0"/>
+                                       </fieldAction>
+                                    </setFilter>
+                                    <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/xsi:type">
+                                       <_c type="28"/>
+                                    </updateField>
+                                    <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotels/to/{}" replaceActionType="0" replaceOuterType="1">
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" type="0"/>
+                                       </fieldAction>
+                                    </setAction>
+                                 </updates>
+                              </contentTree>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                        </bodyfilters>
+                        <headerfilters assocdefid="Http Subscribe" meTy="Message" name="" sch="Http Subscribe" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c meTy="String" name="Method" sch="Http Subscribe" type="7" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="POST" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="String" name="URL" sch="Http Subscribe" type="7" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="/hotelsWS/services/HotelFinder" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="Message" name="httpDetails" sch="Http Subscribe" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="Version" sch="Http Subscribe" type="7" version="1.2">
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="1.0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Message" name="httpHeaders" sch="Http Subscribe" type="12" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <_c meTy="String" name="Accept" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Referer" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Accept-Language" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Accept-Encoding" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="If-Modified-Since" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="If-None-Match" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="User-Agent" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Host" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Connection" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Cookie" sch="Http Subscribe" type="7" version="1.2"/>
+                                 <_c meTy="String" name="Content-Type" sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" exp="text/xml; charset=utf-8" type="0"/>
+                                       </fieldAction>
+                                    </filterActionGroup>
+                                 </_c>
+                                 <_c meTy="String" name="pragma" sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" exp="no-cache" type="0"/>
+                                       </fieldAction>
+                                    </filterActionGroup>
+                                 </_c>
+                                 <_c meTy="String" name="SOAPAction" sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" exp="&quot;getHotels&quot;" type="0"/>
+                                       </fieldAction>
+                                    </filterActionGroup>
+                                 </_c>
+                              </_c>
+                              <_c meTy="Boolean" name="followRedirects" optional="true" sch="Http Subscribe" type="8" version="1.2"/>
+                           </_c>
+                           <_c meTy="String" name="MessageType" sch="Http Subscribe" type="7" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Subscribe" type="11" version="1.2">
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="18:57:15.065 2019/10/03" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                        </headerfilters>
+                        <childActions>
+                           <editableResource id="2b78a84a:16e600b070b:-7d49" selfDescribing="Use a value from the current run to extract information from a test data set." type="test_data_lookup_action" version="1.0">
+                              <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                              <resourceConfig description="" name="Search &quot;datadrivenhotelstub&quot; in &quot;city&quot; (2)">
+                                 <true id="2b78a84a:16e600b070b:-7d48" selfDescribing="Found" type="test_data_lookup_path_action" version="1.0">
+                                    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig description="" name=" (4)" path="0">
+                                       <editableResource id="2b78a84a:16e600b070b:-7d47" selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send." type="send_reply_action" version="1.0">
+                                          <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                                          <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; (3)" receiverequestid="-1817bcdc:16d8f2c9ff6:-7afd">
+                                             <replyHeaderMessage assocdefid="Http Send Reply" meTy="Message" name="" sch="Http Send Reply" type="12" version="1.2">
+                                                <fieldActionGroup>
+                                                   <fieldAction enabled="false" type="1">
+                                                      <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                                   </fieldAction>
+                                                </fieldActionGroup>
+                                                <_c meTy="String" name="StatusCode" sch="Http Send Reply" type="7" value="200" version="1.2">
+                                                   <fieldActionGroup>
+                                                      <fieldAction type="0">
+                                                         <fieldAction exp="200" type="0"/>
+                                                      </fieldAction>
+                                                      <fieldAction enabled="false" type="1">
+                                                         <fieldAction enabled="false" exp="200" type="0"/>
+                                                      </fieldAction>
+                                                   </fieldActionGroup>
+                                                </_c>
+                                                <_c meTy="String" name="ReasonPhrase" sch="Http Send Reply" type="7" value="OK" version="1.2">
+                                                   <fieldActionGroup>
+                                                      <fieldAction type="0">
+                                                         <fieldAction exp="OK" type="0"/>
+                                                      </fieldAction>
+                                                      <fieldAction enabled="false" type="1">
+                                                         <fieldAction enabled="false" exp="OK" type="0"/>
+                                                      </fieldAction>
+                                                   </fieldActionGroup>
+                                                </_c>
+                                                <_c meTy="String" name="MessageType" sch="Http Send Reply" type="7" value="http.text.message.type" version="1.2">
+                                                   <fieldActionGroup>
+                                                      <fieldAction type="0">
+                                                         <fieldAction exp="http.text.message.type" type="0"/>
+                                                      </fieldAction>
+                                                      <fieldAction enabled="false" type="1">
+                                                         <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                                                      </fieldAction>
+                                                   </fieldActionGroup>
+                                                </_c>
+                                                <_c meTy="Message" name="httpDetails" sch="Http Send Reply" type="12" version="1.2">
+                                                   <fieldActionGroup>
+                                                      <fieldAction enabled="false" type="1">
+                                                         <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                                      </fieldAction>
+                                                   </fieldActionGroup>
+                                                   <_c meTy="String" name="Version" sch="Http Send Reply" type="7" value="1.1" version="1.2">
+                                                      <fieldActionGroup>
+                                                         <fieldAction type="0">
+                                                            <fieldAction exp="1.1" type="0"/>
+                                                         </fieldAction>
+                                                         <fieldAction enabled="false" type="1">
+                                                            <fieldAction enabled="false" exp="1.1" type="0"/>
+                                                         </fieldAction>
+                                                      </fieldActionGroup>
+                                                   </_c>
+                                                   <_c meTy="Message" name="httpHeaders" sch="Http Send Reply" type="12" version="1.2">
+                                                      <fieldActionGroup>
+                                                         <fieldAction enabled="false" type="1">
+                                                            <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                                         </fieldAction>
+                                                      </fieldActionGroup>
+                                                      <_c meTy="String" name="Content-Type" sch="Http Send Reply" type="7" value="text/xml;charset=utf-8" version="1.2">
+                                                         <fieldActionGroup>
+                                                            <fieldAction type="0">
+                                                               <fieldAction exp="text/xml;charset=utf-8" type="0"/>
+                                                            </fieldAction>
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction enabled="false" exp="text/xml;charset=utf-8" type="0"/>
+                                                            </fieldAction>
+                                                         </fieldActionGroup>
+                                                      </_c>
+                                                   </_c>
+                                                </_c>
+                                             </replyHeaderMessage>
+                                             <replyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                                                <fieldActionGroup>
+                                                   <fieldAction enabled="false" type="1">
+                                                      <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                                   </fieldAction>
+                                                </fieldActionGroup>
+                                                <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="Text" type="12" version="1.2">
+                                                   <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="XML" fieldSchemaRoot="xml.Element">
+                                                      <property name="XML.nullvalues" value="false"/>
+                                                      <property name="XML.normalise" value="true"/>
+                                                      <property name="XML.declaration" value="true"/>
+                                                      <property name="XML.encoding" value="utf-8"/>
+                                                      <property name="Multi-line indented" value="Single line"/>
+                                                      <property name="XML.xmlFormat" value="Single line"/>
+                                                      <property name="XML.cdata" value="false"/>
+                                                      <property name="XML.space" value="false"/>
+                                                   </fieldExpander>
+                                                   <contentTree>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soapenv:Body&gt;&lt;getHotelsResponse xmlns="http://hotel.booking.vbooking.com"&gt;&lt;getHotelsReturn&gt;&lt;address&gt;&lt;number&gt;%%number%%&lt;/number&gt;&lt;postcode&gt;%%postcode%%&lt;/postcode&gt;&lt;region&gt;%%region%%&lt;/region&gt;&lt;street&gt;%%street%%&lt;/street&gt;&lt;town&gt;%%town%%&lt;/town&gt;&lt;/address&gt;&lt;name&gt;%%name%%&lt;/name&gt;&lt;rate&gt;%%rate%%&lt;/rate&gt;&lt;/getHotelsReturn&gt;%%getHotelsResponse%%&lt;/getHotelsResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;<defaultActions>
+                                                         <defaultMessageActions>
+                                                            <fieldActionGroup>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                                               </fieldAction>
+                                                               <fieldAction type="0">
+                                                                  <fieldAction type="100"/>
+                                                               </fieldAction>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction enabled="false" type="5"/>
+                                                               </fieldAction>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                                               </fieldAction>
+                                                            </fieldActionGroup>
+                                                         </defaultMessageActions>
+                                                         <defaultScalarActions>
+                                                            <fieldActionGroup>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction enabled="false" type="0"/>
+                                                               </fieldAction>
+                                                               <fieldAction type="0">
+                                                                  <fieldAction type="0"/>
+                                                               </fieldAction>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction enabled="false" type="5"/>
+                                                               </fieldAction>
+                                                               <fieldAction enabled="false" type="1">
+                                                                  <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                                               </fieldAction>
+                                                            </fieldActionGroup>
+                                                         </defaultScalarActions>
+                                                      </defaultActions>
+                                                      <updates>
+                                                         <updateField path="/text/soapenv:Envelope">
+                                                            <_c assocdefid="xml.Element"/>
+                                                         </updateField>
+                                                         <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn">
+                                                            <_c optional="true" repeating="true"/>
+                                                         </updateField>
+                                                         <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="0" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/number" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/number">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/number/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/postcode" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/postcode">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/postcode/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="2" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/region" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/region">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/region/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="3" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/street" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/street">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/street/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="4" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/town" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/town">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/address/town/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="1" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/name" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/name">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/name/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <setAction index="2" path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/rate" replaceActionType="101" replaceOuterType="1">
+                                                            <fieldAction enabled="false" type="1">
+                                                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="true" matching="PREFERENCE" type="101"/>
+                                                            </fieldAction>
+                                                         </setAction>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/rate">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/getHotelsReturn/rate/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                         <updateField path="/text/soapenv:Envelope/soapenv:Body/getHotelsResponse/{}">
+                                                            <_c optional="true"/>
+                                                         </updateField>
+                                                      </updates>
+                                                   </contentTree>
+                                                   <fieldActionGroup>
+                                                      <fieldAction type="0">
+                                                         <fieldAction type="4"/>
+                                                      </fieldAction>
+                                                      <fieldAction enabled="false" type="1">
+                                                         <fieldAction enabled="false" type="7"/>
+                                                      </fieldAction>
+                                                   </fieldActionGroup>
+                                                </_c>
+                                             </replyMessage>
+                                          </resourceConfig>
+                                       </editableResource>
+                                    </resourceConfig>
+                                 </true>
+                                 <false id="2b78a84a:16e600b070b:-7d46" selfDescribing="Not Found" type="test_data_lookup_path_action" version="1.0">
+                                    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig description="" name=" (5)" path="1"/>
+                                 </false>
+                                 <props allMatches="true">
+                                    <tdsref id="-1817bcdc:16d8f2c9ff6:-7b02" lkname="datadrivenhotelstub" lkpath="VBServices/Tomcat Services/HotelFinder/getHotels/datadrivenhotelstub" type="simple_test_data"/>
+                                    <lookups column="city" lookupValue="%%city%%"/>
+                                 </props>
+                                 <mapper disableFiltersWhenEmpty="false" knownColumns="getHotelsResponse,number,town,city,rate,street,replyId,postcode,name,region" noAutoMap="">
                                     <mapping columnName="city" tagName="city" type="4"/>
                                     <mapping columnName="getHotelsResponse" tagName="getHotelsResponse" type="4"/>
                                     <mapping columnName="name" tagName="name" type="4"/>
@@ -491,6 +983,15 @@
          <tag description="Generated by Recording Studio" name="rate"/>
          <tag description="Generated by Recording Studio" name="street"/>
       </tagDataStore>
+      <testprops messageClearance="false"/>
+      <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1" messageClearance="false" minorVersion="0" optimise="false" wrks="10">
+         <responseTimeTable>
+            <entry key="4421d091:16971ded625:-7db6:-817575104:-807255066">
+               <value type="NO_DELAY"/>
+            </entry>
+         </responseTimeTable>
+         <environmentTasks preventExecutionOnFailure="false"/>
+      </stubprops>
       <Session mode="NONE"/>
    </resourceConfig>
 </editableResource>

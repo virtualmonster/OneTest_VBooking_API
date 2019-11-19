@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555089096492" createdUser="stuart.walker" id="3340513:16a12846b4b:-7de2" type="environment_resource" updatedTimestamp="1573057911845" updatedUser="STUART.WALKER" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555089096492" createdUser="stuart.walker" id="3340513:16a12846b4b:-7de2" type="environment_resource" updatedTimestamp="1573820504177" updatedUser="STUART.WALKER" version="1.0">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
       <environmentVariable evdescription="" key="blah" value="secret://SuperSecretCode"/>
+      <environmentVariable evdescription="" key="Database_IP" value="10.10.10.10"/>
+      <environmentVariable evdescription="" key="HQS_IP" value="10.10.10.10"/>
       <evbindings>
          <evbinding evLogicalItemId="-13424e68:16b79e57614:-2818" evPhysicalItemId="-13424e68:16b79e57614:-5030"/>
          <evbinding evLogicalItemId="-13424e68:16b79e57614:-5bde" evPhysicalItemId="-13424e68:16b79e57614:-5bdf"/>

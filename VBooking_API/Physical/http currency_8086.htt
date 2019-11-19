@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394023215" createdUser="stuart.walker" id="4421d091:16971ded625:-7ed1" selfDescribing="http currency:8086" type="http_transport" updatedTimestamp="1554730251778" updatedUser="stuart.walker" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1552394023215" createdUser="stuart.walker" id="4421d091:16971ded625:-7ed1" selfDescribing="http currency:8086" type="http_transport" updatedTimestamp="1573735800547" updatedUser="STUART.WALKER" version="1.0">
    <documentation>
       <description value="Resource created from observation"/>
    </documentation>
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig transportName="" transportTemplateName="HTTP">
-      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!62cb" credPreemptive="false" credType="0" credUser="" httpHost="currency" httpNtlmDomain="" httpPort="8086" httpProxyHost="" httpProxyPassword="#com.ghc.1!b975" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
-         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="#com.ghc.1!ce0f" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!5aad" credPreemptive="false" credType="0" credUser="" httpHost="currency" httpNtlmDomain="" httpPort="8086" httpProxyHost="" httpProxyPassword="#com.ghc.1!bc57" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="#com.ghc.1!146c" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+         <oauth clientassertion="" clientid="" clientsecret="" enabled="false" refreshtoken="" scopes="" tokenendpoint=""/>
          <serverAuthentication>
             <authenticationConfig enabled="false" realm="" type="1"/>
             <authenticationConfig algorithm="" authParams="" domain="" enabled="false" nonce="false" opaque="" qop="" realm="" stale="" type="2"/>
