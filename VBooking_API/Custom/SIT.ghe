@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1573735739283" createdUser="STUART.WALKER" id="706c8800:16e6982c758:-7236" type="environment_resource" updatedTimestamp="1573820504312" updatedUser="STUART.WALKER" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1573735739283" createdUser="STUART.WALKER" id="706c8800:16e6982c758:-7236" type="environment_resource" updatedTimestamp="1574248359180" updatedUser="STUART.WALKER" version="1.0">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
       <environmentVariable evdescription="" key="blah" value="secret://SuperSecretCode"/>
