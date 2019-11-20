@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555405910892" createdUser="stuart.walker" id="-2ac3f665:16a20df4699:cfb" type="test_suite_resource" updatedTimestamp="1570125293966" updatedUser="STUART.WALKER" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555405910892" createdUser="stuart.walker" id="-2ac3f665:16a20df4699:cfb" type="test_suite_resource" updatedTimestamp="1574251152411" updatedUser="STUART.WALKER" version="1.0">
    <loggingConfiguration debug="false" writeStubEventsToDB="true"/>
    <resourceConfig>
       <scenario continueOnFail="true" id="4421d091:16971ded625:-799f" type="scenario" version="1.0">
          <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-         <resourceConfig chkenv="false" env="3340513:16a12846b4b:-7de2" name="Scenario" pacingtime="0.0" pacingtype="MIN_DURATION" parallel="false" slowfail="false" usepacing="false">
+         <resourceConfig chkenv="false" name="Scenario" pacingtime="0.0" pacingtype="MIN_DURATION" parallel="false" slowfail="false" usepacing="false">
             <dependencies lockEnvironment="false">
                <_c isRtcpScenario="false" operationID="4421d091:16971ded625:-7db6:-817575104:-807255066"/>
                <_c isRtcpScenario="false" operationID="4421d091:16971ded625:-7db7"/>
