@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1574420103792" createdUser="STUART.WALKER" id="706c8800:16e88128e2c:ee6" type="test_resource" updatedTimestamp="1574423691977" updatedUser="STUART.WALKER" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="706c8800:16e88128e2c:f35" selfDescribing="Specify commands, scripts or programs to execute, either locally or on a remote machine.  Optionally specify assertions on the output and/or store it into tags." type="run_command_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig command="dir" description="" encoding="UTF-8" killAfter="Test" killProcess="false" name="&quot;dir&quot;" waitUntilComplete="true">
+               <remote connectionType="SSH" host="" password="#com.ghc.1!7695" user="" userType="TAGGED" workingDir=""/>
+               <fieldActionGroup>
+                  <fieldAction type="1">
+                     <fieldAction exp=" Volume in drive C is OS&#10; Volume Serial Number is 12C3-507D&#10;&#10; Directory of C:\Program Files\HCL\HCLProducts\API&#10;&#10;14/11/2019  10:43    &lt;DIR&gt;          .&#10;14/11/2019  10:43    &lt;DIR&gt;          ..&#10;05/10/2016  11:06                60 .eclipseproduct&#10;11/10/2019  10:57             1,336 artifacts.xml&#10;12/09/2019  01:17               209 build-info.properties&#10;11/10/2019  10:57    &lt;DIR&gt;          config&#10;14/11/2019  10:43    &lt;DIR&gt;          configuration&#10;18/10/2019  15:48                32 core.20191018.164804.16224.0003.dmp&#10;29/06/2016  09:10           312,832 eclipse.exe&#10;11/10/2019  10:57               287 eclipse.ini&#10;29/06/2016  09:10            18,432 eclipsec.exe&#10;11/10/2019  10:57            18,432 EncryptPassword.exe&#10;11/10/2019  10:57               493 EncryptPassword.ini&#10;11/10/2019  10:57    &lt;DIR&gt;          examples&#10;11/10/2019  10:57    &lt;DIR&gt;          externalSchemaCache&#10;11/09/2019  18:28            18,944 GHDotNetUtils.dll&#10;11/09/2019  18:28               174 IntegrationTester.bat&#10;11/09/2019  18:28            99,840 IntegrationTester.exe&#10;11/10/2019  11:12             1,333 IntegrationTester.ini&#10;11/10/2019  10:57            18,432 IntegrationTesterCmd.exe&#10;11/10/2019  11:12             1,166 IntegrationTesterCmd.ini&#10;11/09/2019  18:28             3,591 it-logging.properties&#10;11/10/2019  10:57    &lt;DIR&gt;          jre&#10;11/09/2019  18:28             3,293 libconfig-logging.properties&#10;11/09/2019  18:28            71,120 LibConfig.exe&#10;11/10/2019  10:57               575 LibConfig.ini&#10;11/09/2019  18:28               161 LibConfigInstall.bat&#10;11/09/2019  18:28               168 LibConfigInstallC.bat&#10;11/10/2019  11:12           103,474 librarysettings.xml&#10;11/10/2019  10:57    &lt;DIR&gt;          license&#10;11/10/2019  10:57    &lt;DIR&gt;          logs&#10;11/10/2019  10:57            18,432 MercuryTest.exe&#10;11/10/2019  11:12             1,235 MercuryTest.ini&#10;11/10/2019  10:57    &lt;DIR&gt;          p2&#10;11/10/2019  10:57    &lt;DIR&gt;          plugins&#10;11/10/2019  10:57    &lt;DIR&gt;          properties&#10;12/09/2019  01:17             5,083 RCL_Log_Config.txt&#10;11/10/2019  10:57    &lt;DIR&gt;          readme&#10;11/10/2019  10:57           312,832 ResourceSelector.exe&#10;11/10/2019  10:57               463 ResourceSelector.ini&#10;12/09/2019  01:17             3,082 rqmagent-logging.properties&#10;11/10/2019  10:57            18,432 RQMAgent.exe&#10;11/10/2019  10:57               551 RQMAgent.ini&#10;11/10/2019  10:57            18,432 RunTests.exe&#10;11/10/2019  11:12             1,277 RunTests.ini&#10;11/10/2019  10:57    &lt;DIR&gt;          scripts&#10;11/10/2019  10:57    &lt;DIR&gt;          swidtag&#10;11/10/2019  10:57    &lt;DIR&gt;          tools&#10;              32 File(s)      1,054,203 bytes&#10;              16 Dir(s)   5,306,138,624 bytes free&#10;" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+               <stdErrFieldActionGroup>
+                  <fieldAction type="1">
+                     <fieldAction type="0"/>
+                  </fieldAction>
+               </stdErrFieldActionGroup>
+               <exitCodeFieldActionGroup>
+                  <fieldAction type="1">
+                     <fieldAction exp="0" type="0"/>
+                  </fieldAction>
+               </exitCodeFieldActionGroup>
+               <executeUser enabled="false" method="SU"/>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>
