@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1575376047559" createdUser="STUART.WALKER" id="-4f3e759:16ecb157254:-7398" type="test_resource" updatedTimestamp="1575376047559" updatedUser="STUART.WALKER" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="5cff52ba:16eb760f7cb:-7d88" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; on resource &quot;/com.vbooking.mybooking/services/LogonServiceImpl&quot; using schema &quot;Text&quot; via &quot;websphere 9080&quot;" transport="-13424e68:16b79e57614:-2818">
+               <headerMessage meTy="Message" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="POST" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="URL" type="7" value="/com.vbooking.mybooking/services/LogonServiceImpl" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="/com.vbooking.mybooking/services/LogonServiceImpl" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <_c meTy="String" name="Version" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction enabled="false" type="1">
+                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="SOAPAction" type="7" value="&quot;logon&quot;" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction type="0">
+                                 <fieldAction exp="&quot;logon&quot;" type="0"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                        </_c>
+                     </_c>
+                     <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="true" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+               </headerMessage>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c name="text" sch="Text" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="5cff52ba:16eb760f7cb:-7d84" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="5cff52ba:16eb760f7cb:-7d88" transport="-13424e68:16b79e57614:-2818">
+               <headerMessage type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+               </headerMessage>
+               <subconfig MessageType="http.text.message.type" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="false" filterResourcePath="false" formatter="HTTP_Message" transport="-13424e68:16b79e57614:-2818"/>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="1">
+                        <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c name="text" sch="Text" type="7" version="1.2"/>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>
