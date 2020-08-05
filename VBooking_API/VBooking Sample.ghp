@@ -5,7 +5,7 @@
       <environmentVariable evdescription="" key="HQS_IP" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings ghRepositoryURL="http://10.10.10.10.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!f3ae" trustStorePath="">
+   <serverSettings ghRepositoryURL="http://10.134.59.18.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!f3ae" trustStorePath="">
       <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
          <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!776e21087E1112924AC2446EE34EA2E47276113C55330CAA6A55" recordFilters="" url="jdbc:db2://10.10.10.10.nip.io:50000/vresults" user="db2inst1">
             <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!fda7" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
@@ -13,24 +13,24 @@
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
          </connectionParams>
       </dbConnectionParameters>
-      <automationServer enabled="true" hostname="10.10.10.10.nip.io" port="443" projectId="1050" projectName="VacationBooking" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!e486" trustStorePath=""/>
+      <automationServer enabled="true" hostname="10.134.59.18.nip.io" port="443" projectId="1050" projectName="VacationBooking" publishResults="true" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!e486" trustStorePath=""/>
    </serverSettings>
    <permissionsSettings autoLogin="true" host="AP-PNP-DC02" permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
    <resultPublishers disableAll="false"/>
    <publishedResourceInfo>
-      <info domain="DEMO" serverUrl="http://localhost:7819/RTCP" vMajor="1" vMinor="0">
+      <info domain="DEMO" serverUrl="http://10.134.59.18.nip.io:7819/RTCP" vMajor="1" vMinor="0">
          <resource id="LOGICAL_ROOT_ID"/>
       </info>
-      <info domain="VacationBooking" serverUrl="https://us-devops-swat:7443/RTCP" vMajor="1" vMinor="0">
+      <info domain="VacationBooking" serverUrl="https://10.134.59.18.nip.io:7443/RTCP" vMajor="1" vMinor="0">
          <resource id="4421d091:16971ded625:-7db6:-817575104:-807255066"/>
       </info>
-      <info domain="VacationBooking" serverUrl="https://us-devops-swat:7443/RTCP" vMajor="1" vMinor="0">
+      <info domain="VacationBooking" serverUrl="https://10.134.59.18.nip.io:7443/RTCP" vMajor="1" vMinor="0">
          <resource id="-2ac3f665:16a2922ab96:-2bec"/>
       </info>
-      <info domain="BLAH" serverUrl="https://us-devops-swat:7443/RTCP" vMajor="1" vMinor="2">
+      <info domain="BLAH" serverUrl="https://10.134.59.18.nip.io:7443/RTCP" vMajor="1" vMinor="2">
          <resource id="725c2c54:16c035ae41c:-67fb"/>
       </info>
-      <info domain="DEMO" serverUrl="http://localhost:7819/RTCP" vMajor="2" vMinor="0">
+      <info domain="DEMO" serverUrl="http://10.134.59.18.nip.io:7819/RTCP" vMajor="2" vMinor="0">
          <resource id="-13424e68:16b79e57614:-3385"/>
       </info>
    </publishedResourceInfo>
