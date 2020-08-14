@@ -5,9 +5,9 @@
       <environmentVariable evdescription="" key="HQS_IP" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings ghRepositoryURL="http://10.10.10.10.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!f3ae" trustStorePath="">
+   <serverSettings ghRepositoryURL="http://10.134.59.18.nip.io:7819/RTCP" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!f3ae" trustStorePath="">
       <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
-         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!776e21087E1112924AC2446EE34EA2E47276113C55330CAA6A55" recordFilters="" url="jdbc:db2://10.10.10.10.nip.io:50000/vresults" user="db2inst1">
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!776e21087E1112924AC2446EE34EA2E47276113C55330CAA6A55" recordFilters="" url="jdbc:db2://10.134.59.18.nip.io:50000/vresults" user="db2inst1">
             <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!fda7" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
             <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="db2inst1" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
