@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1573736207092"
+    createdUser="STUART.WALKER" id="706c8800:16e6982c758:-70e4"
+    selfDescribing="IBM DB2 (Universal) [jdbc:db2://192.168.56.2.nip.io:50000/vbooking, db2inst1]"
+    type="database_connection_resource" updatedTimestamp="1625767951692"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsPass="#com.ghc.1!e015" dpsUser=""
+            driverClass="com.ibm.db2.jcc.DB2Driver"
+            password="#com.ghc.1!e0a46A4740E221117E1C12964AC4446BE340A2A7726111665527"
+            schema=""
+            url="jdbc:db2://192.168.56.2.nip.io:50000/vbooking"
+            useSsl="false" user="db2inst1">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!85db"
+                procedureLearningBehaviour="1" schema=""
+                url="jdbc:db2://10.134.59.18.nip.io:50000/&lt;database name>"
+                useIntegratedDB="true" useSsl="false" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>
