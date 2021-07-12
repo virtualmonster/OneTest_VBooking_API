@@ -10,19 +10,19 @@
     </rootEnvironmentConfig>
     <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
     <serverSettings
-        ghRepositoryURL="http://10.10.10.10.nip.io:7819/RTCP"
-        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!3edc" trustStorePath="">
+        ghRepositoryURL="https://10.10.10.10.nip.io:5443/RTCP"
+        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!40b4" trustStorePath="">
         <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
             <connectionParams ZOSEnv="false"
                 dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
-                dpsPass="#com.ghc.1!f806" dpsUser=""
+                dpsPass="#com.ghc.1!fc42" dpsUser=""
                 driverClass="com.ibm.db2.jcc.DB2Driver"
-                password="#com.ghc.1!80884ADB4467E348A2E5727A1178552D0CBA6A1C40F021097E17"
+                password="#com.ghc.1!d7186A4740E221117E1C12964AC4446BE340A2A7726111665527"
                 url="jdbc:db2://192.168.56.2.nip.io:50000/vresults" user="db2inst1">
                 <dpsSsl useSsl="false"/>
                 <stubSettings maxProcCallCount="10000"
                     maxResultSetRowCount="10000" maxRowCount="10000"
-                    password="#com.ghc.1!30c3"
+                    password="#com.ghc.1!371a"
                     procedureLearningBehaviour="1" schema="" url=""
                     useIntegratedDB="true" useSsl="false" user=""/>
                 <storedProcedureFilter catalogFilterEnabled="false"
@@ -35,10 +35,10 @@
                     timestampFormattingEnabled="false" timestampPrecision="9"/>
             </connectionParams>
         </dbConnectionParameters>
-        <automationServer enabled="true" hostname="10.10.10.10.nip.io"
+        <automationServer enabled="false" hostname="10.10.10.10.nip.io"
             port="443" projectId="1050" projectName="VacationBooking"
             publishResults="true" trustSource="TRUST_ALL"
-            trustStorePassword="#com.ghc.1!f4aa" trustStorePath=""/>
+            trustStorePassword="#com.ghc.1!6af2" trustStorePath=""/>
     </serverSettings>
     <permissionsSettings autoLogin="true" host="AP-PNP-DC02"
         permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
