@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1626271702880"
+    createdUser="STUART.WALKER" id="7f8186d6:17a874a299a:5f5b"
+    selfDescribing="in-46ef4ef1f6554068a9d439dd3a0e653b.192.168.56.2.nip.io (192.168.56.2)"
+    type="host_machine_resource" updatedTimestamp="1626271702880"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="192.168.56.2" user_host_name="in-46ef4ef1f6554068a9d439dd3a0e653b.192.168.56.2.nip.io">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

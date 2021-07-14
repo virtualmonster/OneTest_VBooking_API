@@ -1,19 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1573735739283" createdUser="STUART.WALKER" id="706c8800:16e6982c758:-7236" type="environment_resource" updatedTimestamp="1574248359180" updatedUser="STUART.WALKER" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
-      <environmentVariable evdescription="" key="blah" value="secret://SuperSecretCode"/>
-      <environmentVariable evdescription="" key="Database_IP" value="10.134.59.18"/>
-      <environmentVariable evdescription="" key="HQS_IP" value="10.134.59.18"/>
-      <evbindings>
-         <evbinding evLogicalItemId="-13424e68:16b79e57614:-2818" evPhysicalItemId="706c8800:16e6982c758:-7052"/>
-         <evbinding evLogicalItemId="-13424e68:16b79e57614:-5bde" evPhysicalItemId="706c8800:16e6982c758:-70b1"/>
-         <evbinding evLogicalItemId="3340513:16a1c54dd22:-fb1" evPhysicalItemId="706c8800:16e6982c758:-7192"/>
-         <evbinding evLogicalItemId="4421d091:16971ded625:-7db6:1220038982:408339756" evPhysicalItemId="706c8800:16e6982c758:-7073"/>
-         <evbinding evLogicalItemId="4421d091:16971ded625:-7ec5" evPhysicalItemId="4421d091:16971ded625:-7ec6"/>
-         <evbinding evLogicalItemId="4421d091:16971ded625:-7ed0" evPhysicalItemId="4421d091:16971ded625:-7ed1"/>
-         <evbinding evLogicalItemId="4421d091:16971ded625:-8b1" evPhysicalItemId="706c8800:16e6982c758:-7096"/>
-         <evbinding evLogicalItemId="4421d091:16971ded625:-8c9" evPhysicalItemId="706c8800:16e6982c758:-7119"/>
-         <evbinding evLogicalItemId="4421d091:169cb1941b6:53e5" evPhysicalItemId="706c8800:16e6982c758:-70e4"/>
-      </evbindings>
-   </resourceConfig>
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1573735739283"
+    createdUser="STUART.WALKER" id="706c8800:16e6982c758:-7236"
+    type="environment_resource" updatedTimestamp="1626271670380"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
+        <environmentVariable evdescription="" key="blah" value="secret://SuperSecretCode"/>
+        <environmentVariable evdescription="" key="Database_IP" value="10.134.59.18"/>
+        <environmentVariable evdescription="" key="HQS_IP" value="10.134.59.18"/>
+        <evbindings>
+            <evbinding evLogicalItemId="-13424e68:16b79e57614:-2818" evPhysicalItemId="706c8800:16e6982c758:-7052"/>
+            <evbinding evLogicalItemId="-13424e68:16b79e57614:-5bde" evPhysicalItemId="706c8800:16e6982c758:-70b1"/>
+            <evbinding evLogicalItemId="3340513:16a1c54dd22:-fb1" evPhysicalItemId="706c8800:16e6982c758:-7192"/>
+            <evbinding
+                evLogicalItemId="4421d091:16971ded625:-7db6:1220038982:408339756" evPhysicalItemId="706c8800:16e6982c758:-7073"/>
+            <evbinding evLogicalItemId="4421d091:16971ded625:-7ec5" evPhysicalItemId="4421d091:16971ded625:-7ec6"/>
+            <evbinding evLogicalItemId="4421d091:16971ded625:-7ed0" evPhysicalItemId="4421d091:16971ded625:-7ed1"/>
+            <evbinding evLogicalItemId="4421d091:16971ded625:-8b1" evPhysicalItemId="706c8800:16e6982c758:-7096"/>
+            <evbinding evLogicalItemId="4421d091:16971ded625:-8c9" evPhysicalItemId="706c8800:16e6982c758:-7119"/>
+            <evbinding evLogicalItemId="4421d091:169cb1941b6:53e5" evPhysicalItemId="706c8800:16e6982c758:-70e4"/>
+            <evbinding evLogicalItemId="7f8186d6:17a874a299a:5f0d" evPhysicalItemId="7f8186d6:17a874a299a:5f0e"/>
+        </evbindings>
+    </resourceConfig>
 </editableResource>
