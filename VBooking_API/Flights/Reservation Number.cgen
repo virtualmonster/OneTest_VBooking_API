@@ -1,0 +1,1 @@
+{"name":"Reservation Number","version":"0.0.1","categoryId":"e52243f0-1f34-4f46-a243-f01f344f4659","parentGenerator":"Regex","globalProperties":{"randomDistribution":"false","duplicatesAllowed":"false","blankPercentage":"0"},"configurations":[{"name":"Default","weightage":100.0,"properties":{"regex":"A\\d{5}"}}]}

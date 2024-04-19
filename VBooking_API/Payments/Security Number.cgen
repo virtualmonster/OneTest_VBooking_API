@@ -1,0 +1,1 @@
+{"name":"Security Number","version":"0.0.1","categoryId":"0ce6c52d-4a1d-4ebb-a6c5-2d4a1d4ebb11","parentGenerator":"Number","globalProperties":{"randomDistribution":"false","duplicatesAllowed":"true","blankPercentage":"0"},"configurations":[{"name":"Default","weightage":100.0,"properties":{"numbers":{"by":"noOfDigits","min":3,"max":3},"decimalPlaces":{"min":"","max":""}}}]}
