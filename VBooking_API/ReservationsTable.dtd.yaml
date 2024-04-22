@@ -1,2 +1,2 @@
-connection: ""
-statement: ""
+connection: "VB Database"
+statement: "SELECT * FROM \"FLIGHTS\""
