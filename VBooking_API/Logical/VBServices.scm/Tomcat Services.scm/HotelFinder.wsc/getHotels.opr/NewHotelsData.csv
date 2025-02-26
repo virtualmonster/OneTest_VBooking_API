@@ -1,2 +1,6 @@
-Column1
-
+replyId,city,number,postcode,region,street,town,name,rate,getHotelsResponse
+28,New York,41,W1H 6HN,New York,1298 Stoney Lonesome Road,Paris,HCL Hotel,4.0,J
+16,San Francisco,36,10179,San Francisco,1430 Broadway,Brussels,IBM Hotel,3.5,D
+89,San Francisco,93,40202,Washington,1504 Ridge Avenue,Paris,Holiday Inn,3.4,V
+59,Los Angeles,11,33139,Vienna,45 West 54th Street,Milan,IBM Hotel,3.1,M
+10,Moscow,91,39201,Madrid,1878 Lynch Street,New York,IBM Hotel,3.7,M
