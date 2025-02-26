@@ -1,0 +1,25 @@
+{
+  "name" : "Hotels Data Definition",
+  "description" : "",
+  "fields" : [ {
+    "name" : "replyId"
+  }, {
+    "name" : "city"
+  }, {
+    "name" : "number"
+  }, {
+    "name" : "postcode"
+  }, {
+    "name" : "region"
+  }, {
+    "name" : "street"
+  }, {
+    "name" : "town"
+  }, {
+    "name" : "name"
+  }, {
+    "name" : "rate"
+  }, {
+    "name" : "getHotelsResponse"
+  } ]
+}
