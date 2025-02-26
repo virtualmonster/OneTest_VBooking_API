@@ -2,24 +2,260 @@
   "name" : "Hotels Data Definition",
   "description" : "",
   "fields" : [ {
-    "name" : "replyId"
+    "name" : "replyId",
+    "generatorValues" : {
+      "name" : "Number",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "numbers" : {
+            "by" : "valueRange",
+            "min" : "1",
+            "max" : 100
+          },
+          "decimalPlaces" : {
+            "min" : "",
+            "max" : ""
+          }
+        }
+      } ]
+    }
   }, {
-    "name" : "city"
+    "name" : "city",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "true",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
   }, {
-    "name" : "number"
+    "name" : "number",
+    "generatorValues" : {
+      "name" : "Number",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "numbers" : {
+            "by" : "valueRange",
+            "min" : "1",
+            "max" : 100
+          },
+          "decimalPlaces" : {
+            "min" : "",
+            "max" : ""
+          }
+        }
+      } ]
+    }
   }, {
-    "name" : "postcode"
+    "name" : "postcode",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "false",
+          "zipCode" : "true",
+          "country" : "false"
+        }
+      } ]
+    }
   }, {
-    "name" : "region"
+    "name" : "region",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "true",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
   }, {
-    "name" : "street"
+    "name" : "street",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "true",
+          "secondLine" : "false",
+          "city" : "false",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
   }, {
-    "name" : "town"
+    "name" : "town",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "true",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
   }, {
-    "name" : "name"
+    "name" : "name",
+    "generatorValues" : {
+      "name" : "Enumerator",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "list" : [ {
+            "value" : "HCL Hotel",
+            "distribution" : 20
+          }, {
+            "value" : "IBM Hotel",
+            "distribution" : 30
+          }, {
+            "value" : "Holiday Inn",
+            "distribution" : 50
+          } ],
+          "random" : true
+        }
+      } ]
+    }
   }, {
-    "name" : "rate"
+    "name" : "rate",
+    "generatorValues" : {
+      "name" : "Number",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "numbers" : {
+            "by" : "valueRange",
+            "min" : 3,
+            "max" : 4
+          },
+          "decimalPlaces" : {
+            "min" : 1,
+            "max" : 1
+          }
+        }
+      } ]
+    }
   }, {
-    "name" : "getHotelsResponse"
+    "name" : "getHotelsResponse",
+    "generatorValues" : {
+      "name" : "String",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "minimumCharacters" : 1,
+          "maximumCharacters" : 1,
+          "includeSpecialCharacters" : "false",
+          "includeDigits" : "false"
+        }
+      } ]
+    }
   } ]
 }
